@@ -1,0 +1,10 @@
+{
+  "name": "pardhu-job-hunt-dashboard",
+  "version": "1.0.0",
+  "description": "Pardhu's job hunt dashboard — Vercel-deployed static site, auto-refreshed every 5h by cron + GitHub Action",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve public",
+    "scrape": "python3 ../scripts/scrape_and_commit.py"
+  }
+}

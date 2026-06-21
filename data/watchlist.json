@@ -1,0 +1,147 @@
+{
+  "version": 2,
+  "last_updated": "2026-06-21T17:05:25.009370Z",
+  "note": "India-focused. User is based in India, looking for India-based or India-remote roles. US-only companies removed.",
+  "companies": [
+    {
+      "name": "Sarvam AI",
+      "careers_url": "https://www.sarvam.ai/careers",
+      "priority": 1,
+      "hq": "Bengaluru",
+      "stage": "Series B ($1.5B)"
+    },
+    {
+      "name": "ElevenLabs",
+      "careers_url": "https://elevenlabs.io/careers",
+      "priority": 1,
+      "hq": "Global / India-remote roles",
+      "stage": "Series C"
+    },
+    {
+      "name": "Observe.AI",
+      "careers_url": "https://www.observe.ai/careers",
+      "priority": 1,
+      "hq": "Bangalore + US",
+      "stage": "Series C"
+    },
+    {
+      "name": "Kore.ai",
+      "careers_url": "https://www.kore.ai/careers",
+      "priority": 1,
+      "hq": "Hyderabad",
+      "stage": "Series D"
+    },
+    {
+      "name": "Yellow.ai",
+      "careers_url": "https://yellow.ai/career/",
+      "priority": 1,
+      "hq": "Bangalore",
+      "stage": "Series C"
+    },
+    {
+      "name": "Skit.ai",
+      "careers_url": "https://skit.ai/careers/",
+      "priority": 1,
+      "hq": "Bangalore",
+      "stage": "Series B"
+    },
+    {
+      "name": "CoRover",
+      "careers_url": "https://corover.ai/",
+      "priority": 1,
+      "hq": "Bangalore",
+      "stage": "Google-backed"
+    },
+    {
+      "name": "Smallest.ai",
+      "careers_url": "https://www.linkedin.com/company/smallest",
+      "priority": 1,
+      "hq": "India (Mumbai)",
+      "stage": "Early stage"
+    },
+    {
+      "name": "Vahan.ai",
+      "careers_url": "https://www.vahan.ai",
+      "priority": 1,
+      "hq": "Bangalore",
+      "stage": "Series B (Khosla)"
+    },
+    {
+      "name": "Haptik",
+      "careers_url": "https://www.haptik.ai/careers",
+      "priority": 1,
+      "hq": "Mumbai (Jio-backed)",
+      "stage": "Acquired"
+    },
+    {
+      "name": "Krutrim AI",
+      "careers_url": "https://okrutrim.com/careers",
+      "priority": 1,
+      "hq": "Bangalore (Ola)",
+      "stage": "Series A+"
+    },
+    {
+      "name": "Prodigal (YC)",
+      "careers_url": "https://www.prodigaltech.com/careers",
+      "priority": 1,
+      "hq": "Mumbai",
+      "stage": "Series B+ (YC)"
+    },
+    {
+      "name": "Awaz.ai",
+      "careers_url": "https://wellfound.com/company/awaz-ai",
+      "priority": 1,
+      "hq": "Bangalore",
+      "stage": "Early stage"
+    },
+    {
+      "name": "Boock.ai",
+      "careers_url": "https://wellfound.com/company/boock-ai",
+      "priority": 1,
+      "hq": "Remote India",
+      "stage": "Early stage"
+    },
+    {
+      "name": "dBee",
+      "careers_url": "https://wellfound.com/jobs/4199862-ai-engineer-real-time-voice-agent-systems",
+      "priority": 1,
+      "hq": "Remote India",
+      "stage": "Early stage"
+    },
+    {
+      "name": "Samora AI (YC W26)",
+      "careers_url": "https://www.workatastartup.com/companies/samora-ai",
+      "priority": 1,
+      "hq": "Remote India",
+      "stage": "YC W26"
+    },
+    {
+      "name": "Rhizome AI (YC W26)",
+      "careers_url": "https://www.ycombinator.com/companies/rhizome-ai",
+      "priority": 2,
+      "hq": "Remote",
+      "stage": "YC W26"
+    },
+    {
+      "name": "iClinic AI",
+      "careers_url": "https://hivlance.liveblog365.com/remote-jobs/engineering-intern-iclinic-ai-voice-ai-healthcare-startup-1",
+      "priority": 1,
+      "hq": "Remote",
+      "stage": "Early stage"
+    },
+    {
+      "name": "Zensar Technologies",
+      "careers_url": "https://www.zensar.com/careers",
+      "priority": 1,
+      "hq": "Bangalore (GenAI division)",
+      "stage": "Public (RPG Group)"
+    },
+    {
+      "name": "Caller Digital",
+      "careers_url": "https://caller.digital/careers",
+      "priority": 2,
+      "hq": "India",
+      "stage": "Early stage"
+    }
+  ]
+}

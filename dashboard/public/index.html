@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1F3864">
+  <title>Pardhu's Job Hunt — Dashboard</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80'>🎯</text></svg>">
+  <style>
+    :root {
+      --navy: #1F3864;
+      --navy-soft: #D9E1F2;
+      --accent: #2E75B6;
+      --tier1: #375623;
+      --tier1-bg: #E2EFDA;
+      --tier2: #7F6000;
+      --tier2-bg: #FFF2CC;
+      --applied: #006100;
+      --applied-bg: #C6EFCE;
+      --interview: #9C5700;
+      --interview-bg: #FFEB9C;
+      --rejected: #9C0006;
+      --rejected-bg: #FFC7CE;
+      --muted: #595959;
+      --muted-bg: #F2F2F2;
+      --bg: #FAFAFA;
+      --card: #FFFFFF;
+      --text: #1A1A1A;
+      --border: #E0E0E0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .topbar {
+      background: var(--navy);
+      color: #fff;
+      padding: 16px 24px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .topbar h1 {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: -0.2px;
+    }
+    .topbar .sub {
+      font-size: 12px;
+      opacity: 0.85;
+      margin-top: 2px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      padding: 16px 24px;
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+    }
+    .stat {
+      text-align: center;
+      padding: 8px;
+    }
+    .stat .num {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1;
+    }
+    .stat .num.green { color: var(--applied); }
+    .stat .num.amber { color: var(--interview); }
+    .stat .num.red { color: var(--rejected); }
+    .stat .label {
+      font-size: 11px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-top: 4px;
+    }
+
+    .filters {
+      background: #fff;
+      padding: 12px 24px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .filters input, .filters select {
+      padding: 8px 12px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-size: 14px;
+      background: #fff;
+      color: var(--text);
+    }
+    .filters input { flex: 1; min-width: 200px; }
+    .filters label {
+      font-size: 12px;
+      color: var(--muted);
+      margin-right: -4px;
+    }
+    .filters .toggle {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 12px;
+      background: var(--navy-soft);
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      user-select: none;
+    }
+    .filters .toggle input { margin: 0; }
+
+    .new-badge {
+      display: inline-block;
+      background: #E74C3C;
+      color: #fff;
+      font-size: 11px;
+      padding: 2px 8px;
+      border-radius: 10px;
+      font-weight: 700;
+      margin-left: 8px;
+      animation: pulse 1.5s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.1); opacity: 0.85; }
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px 24px;
+    }
+    .job-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .job {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px 20px;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 16px;
+      align-items: center;
+      transition: all 0.15s;
+    }
+    .job:hover {
+      border-color: var(--accent);
+      box-shadow: 0 2px 12px rgba(31,56,100,0.06);
+      transform: translateY(-1px);
+    }
+    .job.applied { background: var(--applied-bg); border-color: var(--applied); }
+    .job.is-new { border-left: 3px solid #E74C3C; }
+    .job.tier-1 { border-left: 3px solid var(--tier1); }
+    .job.tier-1.is-new { border-left: 3px solid #E74C3C; }
+
+    .score {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 14px;
+      color: #fff;
+      flex-shrink: 0;
+    }
+    .score.s-90 { background: #006100; }
+    .score.s-80 { background: var(--tier1); }
+    .score.s-70 { background: var(--accent); }
+    .score.s-60 { background: var(--interview); }
+    .score.s-low { background: var(--muted); }
+
+    .job-main { min-width: 0; }
+    .job-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+    .job-title a { color: inherit; }
+    .job-company {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+    .job-meta {
+      display: flex;
+      gap: 12px;
+      font-size: 12px;
+      color: var(--muted);
+      flex-wrap: wrap;
+    }
+    .job-meta span::before { margin-right: 4px; }
+    .meta-loc::before { content: "📍"; }
+    .meta-comp::before { content: "💰"; }
+    .meta-source::before { content: "🔗"; }
+    .meta-posted::before { content: "🕒"; }
+
+    .job-why {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 6px;
+      font-style: italic;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+
+    .actions {
+      display: flex;
+      gap: 6px;
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .btn {
+      padding: 6px 14px;
+      border: 1px solid var(--border);
+      background: #fff;
+      color: var(--text);
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--navy-soft); border-color: var(--accent); }
+    .btn.primary {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+    .btn.primary:hover { background: var(--navy); }
+    .btn.success { background: var(--applied); color: #fff; border-color: var(--applied); }
+    .btn.success:hover { background: #004d00; }
+
+    .empty {
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--muted);
+    }
+    .empty h2 { margin-bottom: 8px; color: var(--text); }
+
+    .footer {
+      text-align: center;
+      padding: 24px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    @media (max-width: 720px) {
+      .stats { grid-template-columns: repeat(2, 1fr); }
+      .job { grid-template-columns: 1fr; }
+      .score { width: 40px; height: 40px; font-size: 12px; }
+      .actions { flex-direction: row; flex-wrap: wrap; }
+      .filters { padding: 12px 16px; }
+      .container { padding: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="topbar">
+  <h1>🎯 Pardhu's Job Hunt <span id="newBadge" class="new-badge" style="display:none;">0 new</span></h1>
+  <div class="sub" id="lastUpdated">Loading...</div>
+</div>
+
+<div class="stats">
+  <div class="stat"><div class="num" id="statTotal">—</div><div class="label">Total</div></div>
+  <div class="stat"><div class="num green" id="statApplied">—</div><div class="label">Applied</div></div>
+  <div class="stat"><div class="num amber" id="statInterview">—</div><div class="label">Interview</div></div>
+  <div class="stat"><div class="num" id="statOffers">—</div><div class="label">Offers</div></div>
+</div>
+
+<div class="filters">
+  <input type="text" id="search" placeholder="Search company or role...">
+  <label>Tier:</label>
+  <select id="filterTier">
+    <option value="all">All</option>
+    <option value="1">Tier 1 only</option>
+    <option value="2">Tier 2 only</option>
+  </select>
+  <label>Status:</label>
+  <select id="filterStatus">
+    <option value="all">All</option>
+    <option value="new">New</option>
+    <option value="applied">Applied</option>
+    <option value="viewed">Viewed</option>
+    <option value="interview">Interview</option>
+    <option value="offer">Offer</option>
+    <option value="rejected">Rejected</option>
+  </select>
+  <label>Source:</label>
+  <select id="filterSource">
+    <option value="all">All</option>
+  </select>
+  <label>Sort:</label>
+  <select id="sortBy">
+    <option value="score">Score (high→low)</option>
+    <option value="company">Company (A→Z)</option>
+    <option value="tier">Tier (1 first)</option>
+  </select>
+  <label class="toggle">
+    <input type="checkbox" id="showOnlyNew"> New only
+  </label>
+</div>
+
+<div class="container">
+  <div class="job-list" id="jobList"></div>
+  <div class="empty" id="emptyState" style="display:none;">
+    <h2>No matching jobs</h2>
+    <p>Try clearing your filters or wait for the next scrape run (every 5h).</p>
+  </div>
+</div>
+
+<div class="footer">
+  Auto-refreshes every 5 min · Last data scrape: <span id="dataAge">—</span> ·
+  <a href="#" id="refreshBtn">Refresh now</a>
+</div>
+
+<script>
+const DATA_URL = './data.json';
+const LS_KEY = 'jobHunt:state';
+
+let DATA = null;
+let STATE = loadState();
+
+function loadState() {
+  try {
+    const raw = localStorage.getItem(LS_KEY);
+    if (raw) return JSON.parse(raw);
+  } catch (e) {}
+  return {
+    seenIds: [],
+    jobOverrides: {}  // user changes applied/status/notes
+  };
+}
+
+function saveState() {
+  try { localStorage.setItem(LS_KEY, JSON.stringify(STATE)); } catch (e) {}
+}
+
+function scoreClass(s) {
+  if (s >= 90) return 's-90';
+  if (s >= 80) return 's-80';
+  if (s >= 70) return 's-70';
+  if (s >= 60) return 's-60';
+  return 's-low';
+}
+
+function timeAgo(iso) {
+  if (!iso) return '—';
+  const ms = Date.now() - new Date(iso).getTime();
+  const mins = Math.floor(ms / 60000);
+  if (mins < 1) return 'just now';
+  if (mins < 60) return mins + ' min ago';
+  const hrs = Math.floor(mins / 60);
+  if (hrs < 24) return hrs + 'h ago';
+  const days = Math.floor(hrs / 24);
+  return days + 'd ago';
+}
+
+function mergeJob(j) {
+  const override = STATE.jobOverrides[j.id] || {};
+  return { ...j, ...override };
+}
+
+function isNew(j) {
+  return !STATE.seenIds.includes(j.id);
+}
+
+function markSeen(id) {
+  if (!STATE.seenIds.includes(id)) {
+    STATE.seenIds.push(id);
+    saveState();
+  }
+}
+
+function setOverride(id, patch) {
+  STATE.jobOverrides[id] = { ...(STATE.jobOverrides[id] || {}), ...patch };
+  saveState();
+  render();
+}
+
+async function fetchData() {
+  try {
+    const r = await fetch(DATA_URL + '?t=' + Date.now());
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    DATA = await r.json();
+  } catch (e) {
+    console.error('Fetch failed:', e);
+    document.getElementById('lastUpdated').textContent = '⚠️ Failed to load data.json — is the data file present?';
+    return;
+  }
+
+  // Update topbar + stats
+  document.getElementById('lastUpdated').textContent =
+    `Last updated: ${new Date(DATA.last_updated).toLocaleString()} (${timeAgo(DATA.last_updated)})`;
+  document.getElementById('dataAge').textContent = timeAgo(DATA.last_updated);
+
+  // Count new (in DATA but not in seenIds)
+  const newCount = DATA.jobs.filter(j => isNew(j)).length;
+  const badge = document.getElementById('newBadge');
+  if (newCount > 0) {
+    badge.textContent = newCount + ' new';
+    badge.style.display = 'inline-block';
+  } else {
+    badge.style.display = 'none';
+  }
+
+  // Stats
+  const jobs = DATA.jobs.map(mergeJob);
+  const applied = jobs.filter(j => j.applied).length;
+  const interview = jobs.filter(j => j.status === 'interview' || j.status === 'phone_screen').length;
+  const offers = jobs.filter(j => j.status === 'offer').length;
+  document.getElementById('statTotal').textContent = jobs.length;
+  document.getElementById('statApplied').textContent = applied;
+  document.getElementById('statInterview').textContent = interview;
+  document.getElementById('statOffers').textContent = offers;
+
+  // Populate source filter
+  const sources = [...new Set(jobs.map(j => j.source).filter(Boolean))].sort();
+  const sel = document.getElementById('filterSource');
+  const currentVal = sel.value;
+  sel.innerHTML = '<option value="all">All</option>' +
+    sources.map(s => `<option value="${s}">${s}</option>`).join('');
+  sel.value = currentVal || 'all';
+
+  render();
+}
+
+function getFiltered() {
+  if (!DATA) return [];
+  const q = document.getElementById('search').value.toLowerCase();
+  const tier = document.getElementById('filterTier').value;
+  const status = document.getElementById('filterStatus').value;
+  const source = document.getElementById('filterSource').value;
+  const onlyNew = document.getElementById('showOnlyNew').checked;
+  const sortBy = document.getElementById('sortBy').value;
+
+  let jobs = DATA.jobs.map(mergeJob);
+
+  if (q) jobs = jobs.filter(j =>
+    (j.company || '').toLowerCase().includes(q) ||
+    (j.role || '').toLowerCase().includes(q) ||
+    (j.location || '').toLowerCase().includes(q)
+  );
+  if (tier !== 'all') jobs = jobs.filter(j => j.tier == tier);
+  if (source !== 'all') jobs = jobs.filter(j => j.source === source);
+  if (onlyNew) jobs = jobs.filter(j => isNew(j));
+  if (status !== 'all') {
+    if (status === 'new') jobs = jobs.filter(j => !j.applied && j.status === 'new');
+    else if (status === 'applied') jobs = jobs.filter(j => j.applied);
+    else if (status === 'viewed') jobs = jobs.filter(j => j.status === 'viewed');
+    else if (status === 'interview') jobs = jobs.filter(j => j.status === 'interview' || j.status === 'phone_screen');
+    else if (status === 'offer') jobs = jobs.filter(j => j.status === 'offer');
+    else if (status === 'rejected') jobs = jobs.filter(j => j.status === 'rejected');
+  }
+
+  if (sortBy === 'score') jobs.sort((a, b) => (b.score || 0) - (a.score || 0));
+  else if (sortBy === 'company') jobs.sort((a, b) => (a.company || '').localeCompare(b.company || ''));
+  else if (sortBy === 'tier') jobs.sort((a, b) => (a.tier || 9) - (b.tier || 9));
+
+  return jobs;
+}
+
+function render() {
+  const list = document.getElementById('jobList');
+  const empty = document.getElementById('emptyState');
+  const jobs = getFiltered();
+
+  if (jobs.length === 0) {
+    list.innerHTML = '';
+    empty.style.display = 'block';
+    return;
+  }
+  empty.style.display = 'none';
+
+  list.innerHTML = jobs.map(j => {
+    const sc = scoreClass(j.score || 0);
+    const fresh = isNew(j);
+    const applied = j.applied;
+    const tierClass = j.tier === 1 ? 'tier-1' : '';
+    const newClass = fresh ? 'is-new' : '';
+    const appliedClass = applied ? 'applied' : '';
+
+    const statusBadge = applied
+      ? `<span style="color:var(--applied);font-weight:600;font-size:11px;">✓ APPLIED</span>`
+      : (j.status && j.status !== 'new' ? `<span style="color:var(--interview);font-size:11px;">${j.status.toUpperCase()}</span>` : '');
+
+    return `
+      <div class="job ${appliedClass} ${tierClass} ${newClass}">
+        <div class="score ${sc}">${j.score || '—'}</div>
+        <div class="job-main">
+          <div class="job-title">
+            <a href="${j.url || '#'}" target="_blank" rel="noopener">${escapeHtml(j.role || 'Untitled')}</a>
+            ${fresh ? '<span class="new-badge" style="margin-left:6px;font-size:9px;">NEW</span>' : ''}
+            ${statusBadge}
+          </div>
+          <div class="job-company">${escapeHtml(j.company || '—')} · <span style="color:var(--tier1);font-weight:500;">Tier ${j.tier || '?'}</span></div>
+          <div class="job-meta">
+            <span class="meta-loc">${escapeHtml(j.location || '—')}</span>
+            <span class="meta-comp">${escapeHtml(j.comp || '—')}</span>
+            <span class="meta-source">${escapeHtml(j.source || '—')}</span>
+            <span class="meta-posted">scraped ${timeAgo(j.scraped_at)}</span>
+          </div>
+          ${j.why ? `<div class="job-why">${escapeHtml(j.why)}</div>` : ''}
+        </div>
+        <div class="actions">
+          ${applied
+            ? `<button class="btn" data-action="unapply" data-id="${j.id}">Unmark</button>`
+            : `<button class="btn primary" data-action="apply" data-id="${j.id}">Mark Applied</button>`}
+          ${!applied ? `<button class="btn" data-action="viewed" data-id="${j.id}">Viewed</button>` : ''}
+          ${!applied ? `<button class="btn" data-action="reject" data-id="${j.id}">Skip</button>` : ''}
+          ${j.url ? `<a class="btn" href="${j.url}" target="_blank" rel="noopener">Apply ↗</a>` : ''}
+        </div>
+      </div>
+    `;
+  }).join('');
+
+  // Mark all visible as seen (so "new" badge updates)
+  jobs.forEach(j => markSeen(j.id));
+  const newCount = DATA.jobs.filter(j => isNew(j)).length;
+  const badge = document.getElementById('newBadge');
+  if (newCount > 0) {
+    badge.textContent = newCount + ' new';
+    badge.style.display = 'inline-block';
+  } else {
+    badge.style.display = 'none';
+  }
+}
+
+function escapeHtml(s) {
+  return (s || '').toString()
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+// Event delegation
+document.addEventListener('click', (e) => {
+  const btn = e.target.closest('button[data-action]');
+  if (!btn) return;
+  const id = btn.dataset.id;
+  const action = btn.dataset.action;
+  if (action === 'apply') {
+    setOverride(id, { applied: true, status: 'applied' });
+  } else if (action === 'unapply') {
+    setOverride(id, { applied: false, status: 'new' });
+  } else if (action === 'viewed') {
+    setOverride(id, { status: 'viewed' });
+  } else if (action === 'reject') {
+    setOverride(id, { status: 'rejected' });
+  }
+});
+
+['search','filterTier','filterStatus','filterSource','sortBy','showOnlyNew']
+  .forEach(id => document.getElementById(id).addEventListener('input', render));
+
+document.getElementById('refreshBtn').addEventListener('click', (e) => {
+  e.preventDefault();
+  fetchData();
+});
+
+// Initial load + auto-refresh every 5 min
+fetchData();
+setInterval(fetchData, 5 * 60 * 1000);
+</script>
+
+</body>
+</html>

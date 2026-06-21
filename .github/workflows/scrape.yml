@@ -1,0 +1,45 @@
+name: Scrape jobs every 5 hours
+
+on:
+  schedule:
+    # Every 5 hours (UTC). Adjust if needed.
+    - cron: '0 */5 * * *'
+  workflow_dispatch:  # manual trigger
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install requests beautifulsoup4 lxml
+
+      - name: Run scraper
+        env:
+          JOB_HUNT_API: ${{ secrets.JOB_HUNT_API }}
+        run: |
+          python3 scripts/scrape.py
+
+      - name: Copy fresh data to dashboard public
+        run: |
+          cp data/jobs.json dashboard/public/data.json
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "JobScout Bot"
+          git config user.email "bot@example.com"
+          git add data/jobs.json dashboard/public/data.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "auto: refresh job data $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            git push
+          fi
