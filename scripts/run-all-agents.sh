@@ -1,6 +1,5 @@
 #!/bin/bash
-# Run all 4 job-hunt agents in parallel.
-# Each agent reads/writes ~/.mavis/job-hunt/data.json.
+# Run all 4 job-hunt agents + auto-sync to GitHub/Vercel.
 # Use this when you want a "full sweep" without waiting for the cron.
 
 set -e
@@ -16,8 +15,6 @@ echo
 for agent in "${AGENTS[@]}"; do
   LOG_FILE="$LOG_DIR/${agent}_${TS}.log"
   echo "  → $agent (log: $LOG_FILE)"
-  # Each agent runs in a fresh session; mavis handles the rest.
-  # The agent will append its results to ~/.mavis/job-hunt/data.json.
   mavis session new "$agent" \
     --prompt "Run a fresh scrape/poll and append any new jobs to ~/.mavis/job-hunt/data.json. Be concise — return a 2-line summary at the end." \
     > "$LOG_FILE" 2>&1 &
@@ -40,6 +37,5 @@ for agent in "${AGENTS[@]}"; do
   fi
 done
 
-echo "Refreshing dashboard data.json..."
-cp ~/.mavis/job-hunt/data.json ~/Projects/pardhu-job-hunt/dashboard/public/data.json
-echo "Done. Open the dashboard or check ~/.mavis/job-hunt/data.json"
+echo "Auto-syncing to GitHub/Vercel..."
+bash ~/.mavis/job-hunt/scripts/post-scrape-sync.sh
