@@ -234,6 +234,30 @@
       -webkit-box-orient: vertical;
     }
 
+    .job-extras {
+      display: flex;
+      gap: 12px;
+      margin-top: 8px;
+      font-size: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .extra-link {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .extra-link:hover { background: var(--navy-soft); text-decoration: underline; }
+    .extra-add { color: var(--muted); font-style: italic; }
+    .extra-add:hover { color: var(--accent); }
+    .extra-note { color: var(--interview); font-style: italic; }
+
     .actions {
       display: flex;
       gap: 6px;
@@ -292,7 +316,9 @@
 
 <div class="topbar">
   <h1>🎯 Pardhu's Job Hunt <span id="newBadge" class="new-badge" style="display:none;">0 new</span></h1>
-  <div class="sub" id="lastUpdated">Loading...</div>
+  <div class="sub">
+    <span id="lastUpdated">Loading...</span> · <span id="syncStatus">checking sync...</span>
+  </div>
 </div>
 
 <div class="stats">
@@ -346,8 +372,17 @@
 </div>
 
 <div class="footer">
-  Auto-refreshes every 5 min · Last data scrape: <span id="dataAge">—</span> ·
-  <a href="#" id="refreshBtn">Refresh now</a>
+  <div style="margin-bottom:6px;">
+    Auto-refreshes every 5 min · Last data scrape: <span id="dataAge">—</span> · Last Vercel sync: <span id="syncAge">—</span>
+  </div>
+  <div style="display:flex; gap:8px; justify-content:center; flex-wrap:wrap; align-items:center;">
+    <button class="btn" id="refreshBtn">↻ Refresh data</button>
+    <button class="btn" id="exportBtn">↓ Export CSV</button>
+    <details style="display:inline-block;">
+      <summary style="cursor:pointer;font-size:11px;color:var(--accent);">⌨ Run sync command</summary>
+      <code style="display:block;margin-top:6px;padding:6px 10px;background:var(--muted-bg);border-radius:4px;font-size:11px;user-select:all;">bash ~/.mavis/job-hunt/scripts/post-scrape-sync.sh</code>
+    </details>
+  </div>
 </div>
 
 <script>
@@ -412,6 +447,7 @@ function setOverride(id, patch) {
   STATE.jobOverrides[id] = { ...(STATE.jobOverrides[id] || {}), ...patch };
   saveState();
   render();
+  updateSyncStatus();
 }
 
 async function fetchData() {
@@ -542,6 +578,11 @@ function render() {
             <span class="meta-source">${escapeHtml(j.source || '—')}</span>
             <span class="meta-posted">scraped ${timeAgo(j.scraped_at)}</span>
           </div>
+          <div class="job-extras">
+            ${j.company_careers_url ? `<a class="extra-link" href="${j.company_careers_url}" target="_blank" rel="noopener" title="Open this company's careers page to see all open roles">🏢 Company careers</a>` : ''}
+            ${j.company_linkedin ? `<a class="extra-link" href="${j.company_linkedin}" target="_blank" rel="noopener" title="Research the company on LinkedIn before applying">💼 LinkedIn</a>` : ''}
+            ${STATE.jobOverrides[j.id]?.notes ? `<span class="extra-note" title="Your note">📝 ${escapeHtml(STATE.jobOverrides[j.id].notes.slice(0, 80))}${STATE.jobOverrides[j.id].notes.length > 80 ? '…' : ''}</span>` : `<button class="extra-link extra-add" data-action="note" data-id="${j.id}">📝 Add note</button>`}
+          </div>
           ${j.why ? `<div class="job-why">${escapeHtml(j.why)}</div>` : ''}
         </div>
         <div class="actions">
@@ -553,7 +594,8 @@ function render() {
           ${!applied && j.status !== 'expired' ? `<button class="btn" data-action="viewed" data-id="${j.id}">Viewed</button>` : ''}
           ${!applied && j.status !== 'expired' ? `<button class="btn" data-action="reject" data-id="${j.id}">Skip</button>` : ''}
           ${!applied && j.status !== 'expired' ? `<button class="btn warn" data-action="expired" data-id="${j.id}" title="Mark as expired / no longer accepting applications">Not Available</button>` : ''}
-          ${j.url ? `<a class="btn" href="${j.url}" target="_blank" rel="noopener">Apply ↗</a>` : ''}
+          ${j.url ? `<a class="btn primary" href="${j.url}" target="_blank" rel="noopener">Apply ↗</a>` : ''}
+          ${j.company_careers_url ? `<a class="btn" href="${j.company_careers_url}" target="_blank" rel="noopener" title="Open company careers page (see ALL open roles at this company)">🏢 All roles</a>` : ''}
         </div>
       </div>
     `;
@@ -597,6 +639,18 @@ document.addEventListener('click', (e) => {
     setOverride(id, { status: 'expired', applied: false });
   } else if (action === 'unexpire') {
     setOverride(id, { status: 'new', applied: false });
+  } else if (action === 'note') {
+    const cur = STATE.jobOverrides[id]?.notes || '';
+    const note = prompt('Add a note for this job (e.g., "talked to founder, follow up Monday"):', cur);
+    if (note !== null) {
+      if (note.trim() === '') {
+        const ov = STATE.jobOverrides[id] || {};
+        delete ov.notes;
+        STATE.jobOverrides[id] = ov;
+      } else {
+        setOverride(id, { notes: note.trim() });
+      }
+    }
   }
 });
 
@@ -607,6 +661,45 @@ document.getElementById('refreshBtn').addEventListener('click', (e) => {
   e.preventDefault();
   fetchData();
 });
+
+// CSV export
+document.getElementById('exportBtn').addEventListener('click', () => {
+  if (!DATA) { alert('No data loaded yet'); return; }
+  const rows = [['ID','Company','Role','Location','Comp','Score','Tier','Source','URL','Company Careers URL','LinkedIn','Applied','Status','Notes','Scraped At']];
+  for (const j of DATA.jobs) {
+    const ov = STATE.jobOverrides[j.id] || {};
+    rows.push([
+      j.id, j.company, j.role, j.location, j.comp || '', j.score || '',
+      j.tier, j.source, j.url, j.company_careers_url || '', j.company_linkedin || '',
+      (ov.applied ?? j.applied) ? 'Yes' : 'No',
+      ov.status || j.status || 'new',
+      (ov.notes || '').replace(/"/g, '""'),
+      j.scraped_at || ''
+    ]);
+  }
+  const csv = rows.map(r => r.map(c => `"${String(c).replace(/"/g,'""')}"`).join(',')).join('\n');
+  const blob = new Blob([csv], { type: 'text/csv;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `pardhu-jobs-${new Date().toISOString().slice(0,10)}.csv`;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+});
+
+// Show sync timestamp
+function updateSyncStatus() {
+  const el = document.getElementById('syncAge');
+  if (!DATA) return;
+  const lastUpdated = new Date(DATA.last_updated);
+  const syncAgeEl = document.getElementById('syncStatus');
+  if (syncAgeEl) {
+    syncAgeEl.textContent = `Last sync: ${timeAgo(DATA.last_updated)}`;
+  }
+  if (el) el.textContent = timeAgo(DATA.last_updated);
+}
 
 // Initial load + auto-refresh every 5 min
 fetchData();
