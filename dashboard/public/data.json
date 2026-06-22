@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_updated": "2026-06-22T15:03:33.429558+05:30",
-  "total_jobs": 56,
+  "last_updated": "2026-06-22T15:30:01+05:30",
+  "total_jobs": 59,
   "jobs": [
     {
       "id": "26e0c6859948",
@@ -1534,6 +1534,90 @@
       "applied": false,
       "applied_at": null,
       "status": "new"
+    },
+    {
+      "company": "Sarvam AI",
+      "role": "AI Engineer - Healthcare",
+      "location": "Bengaluru (On-Site)",
+      "comp": "—",
+      "url": "https://www.sarvam.ai/careers#ai-engineer-healthcare",
+      "source": "Sarvam careers (scraped 2026-06-22)",
+      "scraped_at": "2026-06-22T15:30:01+05:30",
+      "posted_at": null,
+      "score": 85,
+      "fit_breakdown": {
+        "skills": 32,
+        "exp": 22,
+        "loc": 14,
+        "comp": 7,
+        "recency": 10,
+        "fit": 5
+      },
+      "tier": 1,
+      "applied": false,
+      "applied_at": null,
+      "status": "new",
+      "why": "AI Engineer role at India's sovereign AI leader on Healthcare AI — Bengaluru on-site, LLM/agent work likely in scope. Sarvam typically 1-3 yr friendly on AI Engineer track.",
+      "notes": "Fresh from 2026-06-22 scrape of /careers page. URL points to careers page anchor — JD link needs follow-up via Apply button on Sarvam site.",
+      "company_careers_url": "https://www.sarvam.ai/careers",
+      "company_linkedin": "https://www.linkedin.com/company/sarvam-ai",
+      "id": "8a4d644fdc65"
+    },
+    {
+      "company": "Sarvam AI",
+      "role": "Applied AI Engineer, Sarvam Agents",
+      "location": "Bengaluru (On-Site)",
+      "comp": "—",
+      "url": "https://www.sarvam.ai/careers#applied-ai-engineer-sarvam-agents",
+      "source": "Sarvam careers (scraped 2026-06-22)",
+      "scraped_at": "2026-06-22T15:30:01+05:30",
+      "posted_at": null,
+      "score": 88,
+      "fit_breakdown": {
+        "skills": 33,
+        "exp": 22,
+        "loc": 14,
+        "comp": 7,
+        "recency": 10,
+        "fit": 5
+      },
+      "tier": 1,
+      "applied": false,
+      "applied_at": null,
+      "status": "new",
+      "why": "Applied AI Engineer on Sarvam Agents team — direct stack match for Pardhu (LLM orchestration, agent work, applied AI). Bengaluru on-site. 1-yr production exp is the floor for this track.",
+      "notes": "Fresh from 2026-06-22 scrape of /careers page. URL points to careers page anchor — JD link needs follow-up via Apply button.",
+      "company_careers_url": "https://www.sarvam.ai/careers",
+      "company_linkedin": "https://www.linkedin.com/company/sarvam-ai",
+      "id": "19be6ff0f211"
+    },
+    {
+      "company": "Sarvam AI",
+      "role": "ML Engineer (Data), Foundational Models",
+      "location": "Bengaluru (On-Site)",
+      "comp": "—",
+      "url": "https://www.sarvam.ai/careers#ml-engineer-data-foundational",
+      "source": "Sarvam careers (scraped 2026-06-22)",
+      "scraped_at": "2026-06-22T15:30:01+05:30",
+      "posted_at": null,
+      "score": 76,
+      "fit_breakdown": {
+        "skills": 26,
+        "exp": 18,
+        "loc": 14,
+        "comp": 7,
+        "recency": 10,
+        "fit": 5
+      },
+      "tier": 2,
+      "applied": false,
+      "applied_at": null,
+      "status": "new",
+      "why": "Foundational Models data engineering role — research/data-pipeline focus, Bengaluru. Stretch from production AI eng profile but learnable. Likely 2-3 yr friendly.",
+      "notes": "Fresh from 2026-06-22 scrape of /careers page. URL points to careers page anchor — JD link needs follow-up. Apply only after Applied AI / AI Engineer Healthcare if those don't pan out.",
+      "company_careers_url": "https://www.sarvam.ai/careers",
+      "company_linkedin": "https://www.linkedin.com/company/sarvam-ai",
+      "id": "eede9016a3f8"
     }
   ]
 }
