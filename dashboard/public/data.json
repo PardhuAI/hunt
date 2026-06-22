@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_updated": "2026-06-22T00:00:01+05:30",
-  "total_jobs": 50,
+  "last_updated": "2026-06-22T15:03:33.429558+05:30",
+  "total_jobs": 56,
   "jobs": [
     {
       "id": "26e0c6859948",
@@ -27,7 +27,9 @@
       "applied_at": null,
       "status": "new",
       "why": "Exact stack match: Pipecat/LiveKit/WebRTC voice agents, agent memory, evals",
-      "notes": ""
+      "notes": "",
+      "company_careers_url": "https://wellfound.com/jobs/4199862-ai-engineer-real-time-voice-agent-systems",
+      "company_linkedin": "https://www.linkedin.com/company/dbee"
     },
     {
       "id": "998bedf26a47",
@@ -53,7 +55,9 @@
       "applied_at": null,
       "status": "new",
       "why": "JD lists WebRTC + RAG + Agentic — Pardhu's exact stack",
-      "notes": ""
+      "notes": "",
+      "company_careers_url": "https://www.workatastartup.com/jobs/86442",
+      "company_linkedin": "https://www.linkedin.com/company/jobtalk-ai"
     },
     {
       "id": "65213e435c66",
@@ -79,7 +83,8 @@
       "applied_at": null,
       "status": "new",
       "why": "0-2 yrs explicit, ₹8 LPA — perfect Pardhu profile",
-      "notes": ""
+      "notes": "",
+      "company_careers_url": "https://www.naukri.com/job-listings-founding-engineer-ai-autonomous-systems-aeromechanics-infra-divyasree-hyderabad-bengaluru-0-to-2-years-290526009959"
     },
     {
       "id": "481bed325d5f",
@@ -105,7 +110,8 @@
       "applied_at": null,
       "status": "new",
       "why": "Voice experiences + browser agents + LLM behavior for production reliability",
-      "notes": ""
+      "notes": "",
+      "company_careers_url": "https://www.workatastartup.com/jobs/86442"
     },
     {
       "id": "887df9cd8769",
@@ -157,7 +163,8 @@
       "applied_at": null,
       "status": "new",
       "why": "0 yrs exp accepted, voice AI startup, founding role",
-      "notes": ""
+      "notes": "",
+      "company_careers_url": "https://wellfound.com/role/l/ai-engineer/india?page=14"
     },
     {
       "id": "822cc51c8d65",
@@ -183,7 +190,8 @@
       "applied_at": null,
       "status": "new",
       "why": "Founding path → CAIO, part-time — low-risk way in",
-      "notes": ""
+      "notes": "",
+      "company_careers_url": "https://wellfound.com/jobs/4218443-founding-voice-ai-engineer-part-time-potential-path-to-chief-ai-officer"
     },
     {
       "id": "a188e149704d",
@@ -235,7 +243,9 @@
       "applied_at": null,
       "status": "new",
       "why": "Voice AI agents, established company, ~8-9 LPA, 1-3 yr friendly",
-      "notes": ""
+      "notes": "",
+      "company_careers_url": "https://www.observe.ai/careers",
+      "company_linkedin": "https://www.linkedin.com/company/observe-ai"
     },
     {
       "id": "d5af44eb9978",
@@ -287,7 +297,9 @@
       "applied_at": null,
       "status": "new",
       "why": "Voice AI at India's sovereign AI leader — Series B $1.5B",
-      "notes": ""
+      "notes": "",
+      "company_careers_url": "https://www.sarvam.ai/careers",
+      "company_linkedin": "https://www.linkedin.com/company/sarvam-ai"
     },
     {
       "id": "bdb612dd71bb",
@@ -313,7 +325,8 @@
       "applied_at": null,
       "status": "new",
       "why": "Founding backend + AI integrations",
-      "notes": ""
+      "notes": "",
+      "company_careers_url": "https://www.grapevine.in/tal/jobs/3d050b6b-bf20-4425-8b2a-aa836875e130"
     },
     {
       "id": "2d7c7c257e82",
@@ -339,7 +352,8 @@
       "applied_at": null,
       "status": "new",
       "why": "YC founding role",
-      "notes": ""
+      "notes": "",
+      "company_careers_url": "https://www.ycombinator.com/companies/zeit-ai/jobs/HYf0lox-founding-engineer-product"
     },
     {
       "id": "4f37f841c99d",
@@ -365,7 +379,9 @@
       "applied_at": null,
       "status": "new",
       "why": "Voice AI partner for NBFC ecosystem",
-      "notes": ""
+      "notes": "",
+      "company_careers_url": "https://www.linkedin.com/company/smallest",
+      "company_linkedin": "https://www.linkedin.com/company/smallest"
     },
     {
       "id": "09a929c50539",
@@ -391,7 +407,9 @@
       "applied_at": null,
       "status": "new",
       "why": "Enterprise agentic AI platform, Series D+",
-      "notes": ""
+      "notes": "",
+      "company_careers_url": "https://www.kore.ai/careers",
+      "company_linkedin": "https://www.linkedin.com/company/kore-ai"
     },
     {
       "id": "695e08ba328e",
@@ -417,7 +435,9 @@
       "applied_at": null,
       "status": "new",
       "why": "Voice + chat AI agents, Series C",
-      "notes": ""
+      "notes": "",
+      "company_careers_url": "https://yellow.ai/career/",
+      "company_linkedin": "https://www.linkedin.com/company/yellow-ai"
     },
     {
       "id": "cf82b288f73c",
@@ -443,7 +463,9 @@
       "applied_at": null,
       "status": "new",
       "why": "Voice AI Series B",
-      "notes": ""
+      "notes": "",
+      "company_careers_url": "https://skit.ai/careers/",
+      "company_linkedin": "https://www.linkedin.com/company/skit-ai"
     },
     {
       "id": "db7f9b7d5720",
@@ -469,7 +491,9 @@
       "applied_at": null,
       "status": "new",
       "why": "Google-backed, 100+ language conversational AI",
-      "notes": ""
+      "notes": "",
+      "company_careers_url": "https://corover.ai/",
+      "company_linkedin": "https://www.linkedin.com/company/corover"
     },
     {
       "id": "33092d9e6961",
@@ -495,7 +519,8 @@
       "applied_at": null,
       "status": "new",
       "why": "Voice AI for Indian languages, TTS/STT",
-      "notes": ""
+      "notes": "",
+      "company_careers_url": "https://vspeech.ai/"
     },
     {
       "id": "0e9a5dea4217",
@@ -521,7 +546,8 @@
       "applied_at": null,
       "status": "new",
       "why": "Multilingual voice bots, growing AI voice company",
-      "notes": ""
+      "notes": "",
+      "company_careers_url": "https://caller.digital/careers"
     },
     {
       "id": "3f85a0f3d218",
@@ -547,7 +573,9 @@
       "applied_at": null,
       "status": "new",
       "why": "Founding agentic AI role, remote India, 11-50 employees",
-      "notes": ""
+      "notes": "",
+      "company_careers_url": "https://wellfound.com/company/boock-ai",
+      "company_linkedin": "https://www.linkedin.com/company/boock-ai"
     },
     {
       "id": "6de7c2a8cd2c",
@@ -573,7 +601,9 @@
       "applied_at": null,
       "status": "new",
       "why": "Multilingual voice AI for $18Bn+ lending industry — YC-backed, prompt engineering for voice agents",
-      "notes": ""
+      "notes": "",
+      "company_careers_url": "https://www.prodigaltech.com/careers",
+      "company_linkedin": "https://www.linkedin.com/company/prodigal-ai"
     },
     {
       "id": "ec7ea4a73627",
@@ -599,7 +629,8 @@
       "applied_at": null,
       "status": "new",
       "why": "Voice AI healthcare, 0-2 yrs, founding energy",
-      "notes": ""
+      "notes": "",
+      "company_careers_url": "https://hivlance.liveblog365.com/remote-jobs/engineering-intern-iclinic-ai-voice-ai-healthcare-startup-1"
     },
     {
       "id": "db74e9cd2e12",
@@ -625,7 +656,8 @@
       "applied_at": null,
       "status": "new",
       "why": "YC W26, AI agents, founding role",
-      "notes": ""
+      "notes": "",
+      "company_careers_url": "https://www.ycombinator.com/companies/rhizome-ai"
     },
     {
       "id": "4d0d80dfad65",
@@ -651,7 +683,9 @@
       "applied_at": null,
       "status": "new",
       "why": "0-2 yrs GenAI role, voice/chat bot experience a plus (Playbooks/DialogFlow)",
-      "notes": ""
+      "notes": "",
+      "company_careers_url": "https://www.zensar.com/careers",
+      "company_linkedin": "https://www.linkedin.com/company/zensar-technologies"
     },
     {
       "id": "0c95903e2370",
@@ -677,7 +711,9 @@
       "applied_at": null,
       "status": "new",
       "why": "No-code conversational AI voice engine, 1-10 employees, top 1% response time",
-      "notes": ""
+      "notes": "",
+      "company_careers_url": "https://wellfound.com/company/awaz-ai",
+      "company_linkedin": "https://www.linkedin.com/company/awaz-ai"
     },
     {
       "id": "5aa0463aa91b",
@@ -703,7 +739,9 @@
       "applied_at": null,
       "status": "new",
       "why": "Healthcare AI, growing fast, voice + agent focus",
-      "notes": ""
+      "notes": "",
+      "company_careers_url": "https://hippocraticai.com/careers/",
+      "company_linkedin": "https://www.linkedin.com/company/hippocratic-ai"
     },
     {
       "id": "60586fcb15c4",
@@ -729,7 +767,8 @@
       "applied_at": null,
       "status": "new",
       "why": "AI service agents, well-funded Series B",
-      "notes": ""
+      "notes": "",
+      "company_careers_url": "https://www.neuron7.ai/"
     },
     {
       "id": "2ba294fc2e72",
@@ -781,7 +820,8 @@
       "applied_at": null,
       "status": "new",
       "why": "0-2 yrs, ₹5-9 LPA, LLM engineering remote roles",
-      "notes": ""
+      "notes": "",
+      "company_careers_url": "https://in.indeed.com/q-llm-engineer-jobs.html"
     },
     {
       "id": "44413ba3717e",
@@ -859,7 +899,9 @@
       "applied_at": null,
       "status": "new",
       "why": "Full-stack AI role at India's sovereign AI leader — production LLM + agent work, perfect for 1-yr exp, on-site Bengaluru",
-      "notes": ""
+      "notes": "",
+      "company_careers_url": "https://www.sarvam.ai/careers",
+      "company_linkedin": "https://www.linkedin.com/company/sarvam-ai"
     },
     {
       "id": "9569779ee82e",
@@ -885,7 +927,9 @@
       "applied_at": null,
       "status": "new",
       "why": "Backend eng at Sarvam — Python/FastAPI + AI infra, 1-yr friendly",
-      "notes": ""
+      "notes": "",
+      "company_careers_url": "https://www.sarvam.ai/careers",
+      "company_linkedin": "https://www.linkedin.com/company/sarvam-ai"
     },
     {
       "id": "11dc49d60f34",
@@ -911,7 +955,9 @@
       "applied_at": null,
       "status": "new",
       "why": "Eval-focused DS role on Sarvam Chanakya (their LLM platform) — 1-yr exp OK",
-      "notes": ""
+      "notes": "",
+      "company_careers_url": "https://www.sarvam.ai/careers",
+      "company_linkedin": "https://www.linkedin.com/company/sarvam-ai"
     },
     {
       "id": "a316c651536d",
@@ -937,7 +983,9 @@
       "applied_at": null,
       "status": "new",
       "why": "Deployment engineering — production LLM rollouts, Delhi office",
-      "notes": ""
+      "notes": "",
+      "company_careers_url": "https://www.sarvam.ai/careers",
+      "company_linkedin": "https://www.linkedin.com/company/sarvam-ai"
     },
     {
       "id": "a0a8c4abd7c5",
@@ -963,7 +1011,9 @@
       "applied_at": null,
       "status": "new",
       "why": "Backend eng on Chanakya (Sarvam's enterprise LLM platform) — Delhi-based, 1-yr friendly",
-      "notes": ""
+      "notes": "",
+      "company_careers_url": "https://www.sarvam.ai/careers",
+      "company_linkedin": "https://www.linkedin.com/company/sarvam-ai"
     },
     {
       "id": "507f10efadfa",
@@ -989,7 +1039,9 @@
       "applied_at": null,
       "status": "new",
       "why": "Voice AI agents for loan servicing, multilingual — Pardhu's voice AI stack fits",
-      "notes": ""
+      "notes": "",
+      "company_careers_url": "https://www.prodigaltech.com/careers",
+      "company_linkedin": "https://www.linkedin.com/company/prodigal-ai"
     },
     {
       "id": "1f095fc8a6d9",
@@ -1015,7 +1067,9 @@
       "applied_at": null,
       "status": "new",
       "why": "Self-serve voice AI HR agents — multilingual Indian languages, AI-native, India remote",
-      "notes": ""
+      "notes": "",
+      "company_careers_url": "https://hunar.ai/careers",
+      "company_linkedin": "https://www.linkedin.com/company/hunar-ai"
     },
     {
       "id": "61020d5ee54a",
@@ -1041,7 +1095,9 @@
       "applied_at": null,
       "status": "new",
       "why": "Voice agents for enterprise support — India-based, voice AI core",
-      "notes": ""
+      "notes": "",
+      "company_careers_url": "https://bolna.ai/careers",
+      "company_linkedin": "https://www.linkedin.com/company/bolna-ai"
     },
     {
       "id": "b304f748e6e6",
@@ -1067,7 +1123,9 @@
       "applied_at": null,
       "status": "new",
       "why": "Voice AI startup, India, real-time voice agents",
-      "notes": ""
+      "notes": "",
+      "company_careers_url": "https://www.linkedin.com/company/ring-ai",
+      "company_linkedin": "https://www.linkedin.com/company/ring-ai"
     },
     {
       "id": "cc9d226f47af",
@@ -1093,7 +1151,9 @@
       "applied_at": null,
       "status": "new",
       "why": "GenAI at scale, requires Playbooks/DialogFlow + voice/chat bot experience — 0-2 yrs explicit",
-      "notes": ""
+      "notes": "",
+      "company_careers_url": "https://www.zensar.com/careers",
+      "company_linkedin": "https://www.linkedin.com/company/zensar-technologies"
     },
     {
       "id": "f2bec7f5fd38",
@@ -1145,7 +1205,9 @@
       "applied_at": null,
       "status": "new",
       "why": "Senior role (3-6 yrs) — likely stretch, flag as 'maybe' ",
-      "notes": ""
+      "notes": "",
+      "company_careers_url": "https://credgenics.com/careers",
+      "company_linkedin": "https://www.linkedin.com/company/credgenics"
     },
     {
       "id": "fe365b571084",
@@ -1171,7 +1233,9 @@
       "applied_at": null,
       "status": "new",
       "why": "ASR/LLM role — speech processing focus, Noida, possibly 0-2 yrs branch",
-      "notes": ""
+      "notes": "",
+      "company_careers_url": "https://credgenics.com/careers",
+      "company_linkedin": "https://www.linkedin.com/company/credgenics"
     },
     {
       "id": "da82943f7526",
@@ -1197,7 +1261,9 @@
       "applied_at": null,
       "status": "new",
       "why": "Top 1% response time on Wellfound, 1-10 employees, multiple openings — voice AI engine",
-      "notes": ""
+      "notes": "",
+      "company_careers_url": "https://wellfound.com/company/awaz-ai",
+      "company_linkedin": "https://www.linkedin.com/company/awaz-ai"
     },
     {
       "id": "de0eafb4297b",
@@ -1223,7 +1289,9 @@
       "applied_at": null,
       "status": "new",
       "why": "Sudarshan Kamath viral listing, no resume required — voice AI infra, real-time TTS/STT",
-      "notes": ""
+      "notes": "",
+      "company_careers_url": "https://www.linkedin.com/company/smallest",
+      "company_linkedin": "https://www.linkedin.com/company/smallest"
     },
     {
       "id": "ef13bb371969",
@@ -1249,7 +1317,8 @@
       "applied_at": null,
       "status": "new",
       "why": "Voice AI for blue-collar hiring, English/Hindi/multilingual, Series B Khosla-backed",
-      "notes": ""
+      "notes": "",
+      "company_careers_url": "https://www.vahan.ai/careers"
     },
     {
       "id": "vyaseka-fe-ai-260622",
@@ -1302,6 +1371,169 @@
       "status": "new",
       "why": "No-code AI voice agents, Bengaluru, voice AI core (tool-use, function calling, evals). Direct stack match to Pardhu's AVOI voice agent work. Top 5% Wellfound responders — likely fast process",
       "notes": "Comp not listed — small startup, ask. Possibly 1-3 yr exp preferred"
+    },
+    {
+      "company": "VOOK",
+      "role": "AI ML Founding Engineer — Voice Systems & Full-Stack",
+      "location": "Delhi",
+      "comp": "Competitive (founding, equity expected)",
+      "url": "https://www.grapevine.in/tal/jobs/a050d303-8e5d-44f5-9cb7-c2f563b1cc6a",
+      "source": "Grapevine / Internshala",
+      "posted_at": "2026-06-15",
+      "score": 88,
+      "fit_breakdown": {
+        "skills": 33,
+        "exp": 22,
+        "loc": 12,
+        "comp": 6,
+        "recency": 10,
+        "fit": 5
+      },
+      "tier": 1,
+      "why": "Founding engineer at VOOK building India's on-device voice memory layer for wearables (earbuds) — private low-power 'Memory OS' that listens + understands. Direct voice AI core, on-device + wearables stack. Pardhu's voice agent experience (AVOI/Pipecat) is the closest match of any role in this poll.",
+      "notes": "Posted 1-2 weeks ago on Internshala/Grapevine. Founding equity expected. Onsite Delhi. Worth cold-emailing founder.",
+      "company_careers_url": "https://in.linkedin.com/jobs/view/ai-ml-founding-engineer-voice-systems-full-stack-at-vook-4426245078",
+      "company_linkedin": "https://www.linkedin.com/company/vook",
+      "id": "c18c2e86825c",
+      "scraped_at": "2026-06-22T15:03:33.429558+05:30",
+      "applied": false,
+      "applied_at": null,
+      "status": "new"
+    },
+    {
+      "company": "4 Way Technologies (Chatreal.ai)",
+      "role": "AI/ML Engineer — Generative AI (LLMs + Multimodal)",
+      "location": "Delhi",
+      "comp": "Competitive",
+      "url": "https://internshala.com/job/detail/ai-ml-engineer-generative-ai-llms-multimodal-delhi-ncr-only-job-in-delhi-at-4-way-technologies1782088224",
+      "source": "Internshala",
+      "posted_at": "2026-06-22",
+      "score": 76,
+      "fit_breakdown": {
+        "skills": 30,
+        "exp": 18,
+        "loc": 11,
+        "comp": 7,
+        "recency": 10,
+        "fit": 5
+      },
+      "tier": 1,
+      "why": "Chatreal.ai — AI companion product, LLM fine-tuning (DeepSeek + in-house), RAG, diffusion/Stable Diffusion/ComfyUI, multimodal. Posted few hours ago. Production LLM + image gen pipeline. Stack matches Pardhu's LLM+RAG experience; diffusion is a stretch but learnable.",
+      "notes": "Posted 'Few hours ago' — extremely fresh. Delhi onsite, 2+ yr exp listed. Pardhu's 1 yr might be a stretch but voice/agent voice startup-track trumps. Direct apply on Internshala.",
+      "company_careers_url": "https://internshala.com/job/detail/ai-ml-engineer-generative-ai-llms-multimodal-delhi-ncr-only-job-in-delhi-at-4-way-technologies1782088224",
+      "id": "4e6920f1b197",
+      "scraped_at": "2026-06-22T15:03:33.429558+05:30",
+      "applied": false,
+      "applied_at": null,
+      "status": "new"
+    },
+    {
+      "company": "Express Analytics",
+      "role": "AI/ML Engineer — Generative & Agentic AI",
+      "location": "Remote India",
+      "comp": "Competitive (up to market, 1-3 yr range)",
+      "url": "https://internshala.com/job/detail/remote-ai-ml-engineer-june-2026-job-at-express-analytics1781829042",
+      "source": "Internshala",
+      "posted_at": "2026-06-19",
+      "score": 75,
+      "fit_breakdown": {
+        "skills": 28,
+        "exp": 22,
+        "loc": 15,
+        "comp": 7,
+        "recency": 8,
+        "fit": 5
+      },
+      "tier": 1,
+      "why": "Express Analytics — AI-powered marketing/customer analytics. 1-3 yr LLM/agent role. Production LangChain, RAG, Docker, FastAPI, voice/agents nice-to-have. Direct stack match (Pardhu's Pipecat voice work + LangChain RAG). Remote India.",
+      "notes": "Posted 3 days ago. Strong remote fit. 1-3 yr is the sweet spot.",
+      "company_careers_url": "https://internshala.com/job/detail/remote-ai-ml-engineer-june-2026-job-at-express-analytics1781829042",
+      "id": "b4d73256f3f3",
+      "scraped_at": "2026-06-22T15:03:33.429558+05:30",
+      "applied": false,
+      "applied_at": null,
+      "status": "new"
+    },
+    {
+      "company": "Bandhan Technologies",
+      "role": "Artificial Intelligence Engineer (GenAI/Agentic AI)",
+      "location": "Bangalore",
+      "comp": "Competitive",
+      "url": "https://internshala.com/job/detail/artificial-intelligence-engineer-job-in-bangalore-at-bandhan-technologies1781915562",
+      "source": "Internshala",
+      "posted_at": "2026-06-20",
+      "score": 72,
+      "fit_breakdown": {
+        "skills": 26,
+        "exp": 18,
+        "loc": 14,
+        "comp": 5,
+        "recency": 9,
+        "fit": 5
+      },
+      "tier": 1,
+      "why": "GenAI/Agentic AI Engineer — 2-5 yr listed but India, Bangalore, RAG/multi-agent orchestration/master-slave agentic architectures. LangChain/Pinecone. Posted 2 days ago. Production-grade AI workflows.",
+      "notes": "Posted 2 days ago. 2-5 yr listed — Pardhu's 1 yr is stretch but his voice agent production work compensates.",
+      "company_careers_url": "https://internshala.com/job/detail/artificial-intelligence-engineer-job-in-bangalore-at-bandhan-technologies1781915562",
+      "id": "23ea269eaf7e",
+      "scraped_at": "2026-06-22T15:03:33.429558+05:30",
+      "applied": false,
+      "applied_at": null,
+      "status": "new"
+    },
+    {
+      "company": "TechKareer",
+      "role": "AI Engineer (LLM/Agent)",
+      "location": "Gurugram, Haryana (Hybrid)",
+      "comp": "Competitive",
+      "url": "https://internshala.com/job/detail/ai-engineer-job-in-haryana-at-techkareer1781686094",
+      "source": "Internshala",
+      "posted_at": "2026-06-17",
+      "score": 70,
+      "fit_breakdown": {
+        "skills": 26,
+        "exp": 18,
+        "loc": 12,
+        "comp": 5,
+        "recency": 7,
+        "fit": 5
+      },
+      "tier": 1,
+      "why": "TechKareer — AI Engineer building production LLM systems (not just API glue). Fine-tuning (LoRA/QLoRA/SFT), multi-agent architectures, RAG, evaluation pipelines. LegalTech/finance/healthcare domain. 2+ yr listed. Posted 5 days ago.",
+      "notes": "Posted 5 days ago. 6 days/week, 2-3 days in-office Gurugram. Domain focus (legal/finance/healthcare) is OK for Pardhu.",
+      "company_careers_url": "https://internshala.com/job/detail/ai-engineer-job-in-haryana-at-techkareer1781686094",
+      "id": "288c229eaa95",
+      "scraped_at": "2026-06-22T15:03:33.429558+05:30",
+      "applied": false,
+      "applied_at": null,
+      "status": "new"
+    },
+    {
+      "company": "Earnest Fintech Limited",
+      "role": "ML/AI Developer — Generative AI & Agentic AI",
+      "location": "Noida",
+      "comp": "₹6-6.5 LPA",
+      "url": "https://internshala.com/job/detail/fresher-ml-ai-developer--generative-ai-agentic-ai-job-in-noida-at-earnest-fintech-limited1781501192",
+      "source": "Internshala",
+      "posted_at": "2026-06-15",
+      "score": 70,
+      "fit_breakdown": {
+        "skills": 25,
+        "exp": 22,
+        "loc": 11,
+        "comp": 6,
+        "recency": 6,
+        "fit": 5
+      },
+      "tier": 2,
+      "why": "Fresher-friendly ML/AI Developer — LLMs, RAG, MCP, AI orchestration frameworks, multi-agent workflows. Posted 7 days ago. Comp exactly at floor of 6.5 LPA target. Stack: LangChain, GenAI dev.",
+      "notes": "Posted 7 days ago. Comp right at floor — viable only if growth path is fast. Noida onsite. Watch: 'no experience required' but real stack is mid-level.",
+      "company_careers_url": "https://internshala.com/job/detail/fresher-ml-ai-developer--generative-ai-agentic-ai-job-in-noida-at-earnest-fintech-limited1781501192",
+      "id": "f971b3c83218",
+      "scraped_at": "2026-06-22T15:03:33.429558+05:30",
+      "applied": false,
+      "applied_at": null,
+      "status": "new"
     }
   ]
 }
