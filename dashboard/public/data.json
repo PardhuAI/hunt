@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_updated": "2026-06-22T15:30:01+05:30",
-  "total_jobs": 59,
+  "last_updated": "2026-06-22T21:03:44+05:30",
+  "total_jobs": 62,
   "jobs": [
     {
       "id": "26e0c6859948",
@@ -1618,6 +1618,90 @@
       "company_careers_url": "https://www.sarvam.ai/careers",
       "company_linkedin": "https://www.linkedin.com/company/sarvam-ai",
       "id": "eede9016a3f8"
+    },
+    {
+      "id": "c81407369a5d",
+      "company": "Sarvam AI",
+      "role": "Forward Deployed Software Engineer - Dubbing Platform",
+      "location": "Bengaluru",
+      "comp": "—",
+      "url": "https://www.sarvam.ai/careers/jobs/fbae604b-6d04-4c51-8208-6c2a2b248659",
+      "source": "career-scraper",
+      "scraped_at": "2026-06-22T15:33:34.186115+00:00",
+      "posted_at": null,
+      "score": 80,
+      "fit_breakdown": {
+        "skills": 30,
+        "exp": 18,
+        "loc": 15,
+        "comp": 5,
+        "recency": 8,
+        "fit": 4
+      },
+      "tier": 1,
+      "applied": false,
+      "applied_at": null,
+      "status": "new",
+      "why": "Voice dubbing platform FDSE — direct match to Pardhu's Pipecat/LiveKit/WebRTC voice-agent production experience",
+      "notes": "Watch out: FDSE roles typically expect 2+ yr client-facing deployment experience; Sarvam Series B FDSE on voice dubbing is the most AI-adjacent match",
+      "company_careers_url": "https://www.sarvam.ai/careers",
+      "company_linkedin": "https://www.linkedin.com/company/sarvam-ai"
+    },
+    {
+      "id": "a7464571af4d",
+      "company": "Sarvam AI",
+      "role": "ML Engineer, Dubbing",
+      "location": "Bengaluru",
+      "comp": "—",
+      "url": "https://www.sarvam.ai/careers/jobs/95fe7d08-b3e1-4961-9809-00a29e6c5f06",
+      "source": "career-scraper",
+      "scraped_at": "2026-06-22T15:33:34.186115+00:00",
+      "posted_at": null,
+      "score": 80,
+      "fit_breakdown": {
+        "skills": 30,
+        "exp": 18,
+        "loc": 15,
+        "comp": 5,
+        "recency": 8,
+        "fit": 4
+      },
+      "tier": 1,
+      "applied": false,
+      "applied_at": null,
+      "status": "new",
+      "why": "ML engineering on voice dubbing platform — speech/TTS/voice tech, strong overlap with Pardhu's voice AI agent stack",
+      "notes": "Watch out: ML Engineer titles at Series B Sarvam usually expect 2+ yrs; verify seniority on apply",
+      "company_careers_url": "https://www.sarvam.ai/careers",
+      "company_linkedin": "https://www.linkedin.com/company/sarvam-ai"
+    },
+    {
+      "id": "149b14d5a249",
+      "company": "Sarvam AI",
+      "role": "Forward Deployed Software Engineer | 2-5 years",
+      "location": "Bengaluru",
+      "comp": "—",
+      "url": "https://www.sarvam.ai/careers/jobs/ac2b835e-375c-48d8-a174-8c2935f408b2",
+      "source": "career-scraper",
+      "scraped_at": "2026-06-22T15:33:34.186115+00:00",
+      "posted_at": null,
+      "score": 80,
+      "fit_breakdown": {
+        "skills": 30,
+        "exp": 18,
+        "loc": 15,
+        "comp": 5,
+        "recency": 8,
+        "fit": 4
+      },
+      "tier": 1,
+      "applied": false,
+      "applied_at": null,
+      "status": "new",
+      "why": "FDSE role on the conversational/voice AI side — matches Pardhu's deployed voice agent profile",
+      "notes": "Watch out: title explicitly says 2-5 years — Pardhu is at 1 yr. Apply with strong production voice-agent story as exception.",
+      "company_careers_url": "https://www.sarvam.ai/careers",
+      "company_linkedin": "https://www.linkedin.com/company/sarvam-ai"
     }
   ]
 }
