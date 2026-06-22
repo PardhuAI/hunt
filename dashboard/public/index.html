@@ -23,6 +23,8 @@
       --rejected-bg: #FFC7CE;
       --muted: #595959;
       --muted-bg: #F2F2F2;
+      --expired: #7F7F7F;
+      --expired-bg: #E8E8E8;
       --bg: #FAFAFA;
       --card: #FFFFFF;
       --text: #1A1A1A;
@@ -80,6 +82,7 @@
     .stat .num.green { color: var(--applied); }
     .stat .num.amber { color: var(--interview); }
     .stat .num.red { color: var(--rejected); }
+    .stat .num.gray { color: var(--expired); }
     .stat .label {
       font-size: 11px;
       color: var(--muted);
@@ -169,6 +172,8 @@
       transform: translateY(-1px);
     }
     .job.applied { background: var(--applied-bg); border-color: var(--applied); }
+    .job.expired { background: var(--expired-bg); border-color: var(--expired); opacity: 0.7; }
+    .job.expired .job-title, .job.expired .job-company, .job.expired .job-meta { text-decoration: line-through; color: var(--expired); }
     .job.is-new { border-left: 3px solid #E74C3C; }
     .job.tier-1 { border-left: 3px solid var(--tier1); }
     .job.tier-1.is-new { border-left: 3px solid #E74C3C; }
@@ -256,6 +261,8 @@
     .btn.primary:hover { background: var(--navy); }
     .btn.success { background: var(--applied); color: #fff; border-color: var(--applied); }
     .btn.success:hover { background: #004d00; }
+    .btn.warn { color: var(--expired); border-color: var(--expired); }
+    .btn.warn:hover { background: var(--expired-bg); }
 
     .empty {
       text-align: center;
@@ -292,6 +299,7 @@
   <div class="stat"><div class="num" id="statTotal">—</div><div class="label">Total</div></div>
   <div class="stat"><div class="num green" id="statApplied">—</div><div class="label">Applied</div></div>
   <div class="stat"><div class="num amber" id="statInterview">—</div><div class="label">Interview</div></div>
+  <div class="stat"><div class="num gray" id="statExpired">—</div><div class="label">Not Avail.</div></div>
   <div class="stat"><div class="num" id="statOffers">—</div><div class="label">Offers</div></div>
 </div>
 
@@ -312,6 +320,7 @@
     <option value="interview">Interview</option>
     <option value="offer">Offer</option>
     <option value="rejected">Rejected</option>
+    <option value="expired">Not Available</option>
   </select>
   <label>Source:</label>
   <select id="filterSource">
@@ -435,10 +444,12 @@ async function fetchData() {
   const jobs = DATA.jobs.map(mergeJob);
   const applied = jobs.filter(j => j.applied).length;
   const interview = jobs.filter(j => j.status === 'interview' || j.status === 'phone_screen').length;
+  const expired = jobs.filter(j => j.status === 'expired').length;
   const offers = jobs.filter(j => j.status === 'offer').length;
   document.getElementById('statTotal').textContent = jobs.length;
   document.getElementById('statApplied').textContent = applied;
   document.getElementById('statInterview').textContent = interview;
+  document.getElementById('statExpired').textContent = expired;
   document.getElementById('statOffers').textContent = offers;
 
   // Populate source filter
@@ -478,6 +489,7 @@ function getFiltered() {
     else if (status === 'interview') jobs = jobs.filter(j => j.status === 'interview' || j.status === 'phone_screen');
     else if (status === 'offer') jobs = jobs.filter(j => j.status === 'offer');
     else if (status === 'rejected') jobs = jobs.filter(j => j.status === 'rejected');
+    else if (status === 'expired') jobs = jobs.filter(j => j.status === 'expired');
   }
 
   if (sortBy === 'score') jobs.sort((a, b) => (b.score || 0) - (a.score || 0));
@@ -503,16 +515,19 @@ function render() {
     const sc = scoreClass(j.score || 0);
     const fresh = isNew(j);
     const applied = j.applied;
+    const expired = j.status === 'expired';
     const tierClass = j.tier === 1 ? 'tier-1' : '';
     const newClass = fresh ? 'is-new' : '';
     const appliedClass = applied ? 'applied' : '';
+    const expiredClass = expired ? 'expired' : '';
 
     const statusBadge = applied
       ? `<span style="color:var(--applied);font-weight:600;font-size:11px;">✓ APPLIED</span>`
-      : (j.status && j.status !== 'new' ? `<span style="color:var(--interview);font-size:11px;">${j.status.toUpperCase()}</span>` : '');
+      : (j.status === 'expired' ? `<span style="color:var(--expired);font-weight:600;font-size:11px;">⊗ NOT AVAILABLE</span>`
+      : (j.status && j.status !== 'new' ? `<span style="color:var(--interview);font-size:11px;">${j.status.toUpperCase()}</span>` : ''));
 
     return `
-      <div class="job ${appliedClass} ${tierClass} ${newClass}">
+      <div class="job ${appliedClass} ${expiredClass} ${tierClass} ${newClass}">
         <div class="score ${sc}">${j.score || '—'}</div>
         <div class="job-main">
           <div class="job-title">
@@ -532,18 +547,21 @@ function render() {
         <div class="actions">
           ${applied
             ? `<button class="btn" data-action="unapply" data-id="${j.id}">Unmark</button>`
-            : `<button class="btn primary" data-action="apply" data-id="${j.id}">Mark Applied</button>`}
-          ${!applied ? `<button class="btn" data-action="viewed" data-id="${j.id}">Viewed</button>` : ''}
-          ${!applied ? `<button class="btn" data-action="reject" data-id="${j.id}">Skip</button>` : ''}
+            : (j.status === 'expired'
+              ? `<button class="btn success" data-action="unexpire" data-id="${j.id}">Mark Available</button>`
+              : `<button class="btn primary" data-action="apply" data-id="${j.id}">Mark Applied</button>`)}
+          ${!applied && j.status !== 'expired' ? `<button class="btn" data-action="viewed" data-id="${j.id}">Viewed</button>` : ''}
+          ${!applied && j.status !== 'expired' ? `<button class="btn" data-action="reject" data-id="${j.id}">Skip</button>` : ''}
+          ${!applied && j.status !== 'expired' ? `<button class="btn warn" data-action="expired" data-id="${j.id}" title="Mark as expired / no longer accepting applications">Not Available</button>` : ''}
           ${j.url ? `<a class="btn" href="${j.url}" target="_blank" rel="noopener">Apply ↗</a>` : ''}
         </div>
       </div>
     `;
   }).join('');
 
-  // Mark all visible as seen (so "new" badge updates)
-  jobs.forEach(j => markSeen(j.id));
-  const newCount = DATA.jobs.filter(j => isNew(j)).length;
+  // Mark all visible as seen (so "new" badge updates) — except expired ones
+  jobs.forEach(j => { if (j.status !== 'expired') markSeen(j.id); });
+  const newCount = DATA.jobs.filter(j => isNew(j) && j.status !== 'expired').length;
   const badge = document.getElementById('newBadge');
   if (newCount > 0) {
     badge.textContent = newCount + ' new';
@@ -575,6 +593,10 @@ document.addEventListener('click', (e) => {
     setOverride(id, { status: 'viewed' });
   } else if (action === 'reject') {
     setOverride(id, { status: 'rejected' });
+  } else if (action === 'expired') {
+    setOverride(id, { status: 'expired', applied: false });
+  } else if (action === 'unexpire') {
+    setOverride(id, { status: 'new', applied: false });
   }
 });
 
