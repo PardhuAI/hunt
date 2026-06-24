@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_updated": "2026-06-24T10:33:47+05:30",
-  "total_jobs": 81,
+  "last_updated": "2026-06-24T15:05:14+05:30",
+  "total_jobs": 82,
   "jobs": [
     {
       "id": "26e0c6859948",
@@ -2239,6 +2239,34 @@
       "status": "new",
       "company_careers_url": "https://www.sarvam.ai/careers",
       "company_linkedin": "https://www.linkedin.com/company/sarvam-ai"
+    },
+    {
+      "id": "vela-ycw26-fe-ind-14a0c35f",
+      "company": "Vela (YC W26)",
+      "role": "Founding Engineer — AI Scheduling Agents (India)",
+      "location": "IN / Remote (IN)",
+      "comp": "₹2L – ₹6L + 0.10% equity",
+      "url": "https://www.ycombinator.com/companies/vela/jobs/qoFg7EJ-founding-engineer-vela-solving-scheduling-india",
+      "source": "Work at a Startup (YC)",
+      "scraped_at": "2026-06-24T15:05:14.385446+05:30",
+      "posted_at": "2026-06-24",
+      "score": 90,
+      "fit_breakdown": {
+        "skills": 30,
+        "exp": 24,
+        "loc": 15,
+        "comp": 6,
+        "recency": 10,
+        "fit": 5
+      },
+      "tier": 1,
+      "applied": false,
+      "applied_at": null,
+      "status": "new",
+      "why": "YC W26 (Winter 2026, freshest batch). AI agents for complex scheduling coordination — directly adjacent to Pardhu's voice agent experience (LLM orchestration, multi-party conversations, agent memory). Indian founders (Korisepati brothers, Wharton/CMU, ex-AWS ML SuperCompute). 'Any (new grads ok)' — Pardhu's 1-yr production voice AI work is well above bar. Founding engineer = equity upside (0.10%) + first-employee leverage on next seed round. ₹2-6L base is below 6.5 LPA floor but Vela is 2-employee pre-seed; comp bumps after seed round typical.",
+      "notes": "Comp below floor at base — negotiate to ₹8-10L on strength of AVOI voice agent production work. Founders are reachable at founders@tryvela.ai. Tryvela.ai is the live product. Vela's W26 batch funding imminent (after YC demo day Jul 2026). Chennai listed as alternative location (in Pardhu's priority list).",
+      "company_careers_url": "https://www.ycombinator.com/companies/vela/jobs",
+      "company_linkedin": "https://www.linkedin.com/company/vela-ai"
     }
   ]
 }
