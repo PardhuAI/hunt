@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_updated": "2026-06-23T05:03:45Z",
-  "total_jobs": 73,
+  "last_updated": "2026-06-24T10:00:01+05:30",
+  "total_jobs": 74,
   "jobs": [
     {
       "id": "26e0c6859948",
@@ -2009,6 +2009,33 @@
       "why": "Jio-backed Voice AI Engineer — voice bots, IVR, ASR/TTS/LLM. JD lists Python/Node + telephony + conversational AI — direct stack match to Pardhu's AVOI Pipecat/LiveKit work. Form has 0-2 yr option so 1-yr fits. Mumbai hybrid.",
       "notes": "Form lists 'Fresher / 0 to 2 years' as a valid choice — 1-yr exp is in range. Mumbai-based. Jio Haptik is established (200+ ppl) so compensation likely 8-12 LPA.",
       "watch_out": "Notice period questions in form are rigid. Mumbai relocation may be required."
+    },
+    {
+      "id": "oc24062026a1",
+      "company": "OpenChat",
+      "role": "Founding Engineer (First AI Engineer — Social Network for AI)",
+      "location": "Work from home (India-eligible)",
+      "comp": "Competitive (US-band likely)",
+      "url": "https://in.talent.com/view?id=625117879537767953",
+      "source": "Internshala / Talent.com (cross-posted)",
+      "scraped_at": "2026-06-24T10:00:01+05:30",
+      "posted_at": "2026-06-24",
+      "score": 78,
+      "fit_breakdown": {
+        "skills": 30,
+        "exp": 23,
+        "loc": 12,
+        "comp": 4,
+        "recency": 10,
+        "fit": 3
+      },
+      "tier": 2,
+      "applied": false,
+      "applied_at": null,
+      "status": "new",
+      "why": "First AI Engineer at OpenChat — LLM APIs, agent frameworks, RAG, evals, model fine-tuning. Direct stack match to Pardhu's voice agent / LLM work. Founding role, no exp required, posted today on Internshala and cross-posted to Talent.com, BeBee, expertini. India WFH.",
+      "notes": "Cross-posted same JD across Internshala / Talent.com / BeBee / Jobsora / expertini (job-spam pattern). Founding role = high equity if real, but verify the company's actual status before investing time. The 'AI social network' framing is novel.",
+      "watch_out": "Team is ex-Blur ($1B NFT marketplace) and Thirdweb (Coinbase/Haun-backed agent infra) — Web3/crypto comp band. Salary likely US$80-150K range, not India ₹6.5-10 LPA. Crypto regulation in India is gray area (30% VDA tax, 1% TDS). Apply only if open to US-band comp and willing to navigate crypto comp structure. If comp is actually India-tier, this would be a 90+ score."
     }
   ]
 }
