@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_updated": "2026-06-25T09:35:31.638334+00:00",
-  "total_jobs": 92,
+  "last_updated": "2026-06-25T10:05:51.892768+00:00",
+  "total_jobs": 93,
   "jobs": [
     {
       "id": "26e0c6859948",
@@ -2528,6 +2528,35 @@
       "why": "YC W26 founding role, W26 batch (most recent), AI governance platform — sits on enterprise networks to discover, govern, and protect AI usage. 'Any (new grads ok)' is rare + Pardhu-friendly. Founding-team equity 0.20-0.50%. Founder Naman ex-Sam Altman-backed company, sold first startup early. 4-person team, ship fast, AI-pilled culture.",
       "watch_out": "Role is more enterprise-deployment heavy (MDM, proxy, SSO, browser extensions) than voice/agent LLM work — primary stack match is partial. Posted 12 days ago (slightly outside strict 7d window — borderline). Comp band ₹25-60L is well above Pardhu's 7.5+ target — for a 1-yr exp hire, expect bottom-half of band. Apply direct: oximy.com/careers.",
       "notes": ""
+    },
+    {
+      "id": "samora-fdse-ycw26-260625",
+      "company": "Samora AI (YC W26)",
+      "role": "Forward Deployed Engineer",
+      "location": "Bengaluru, KA, IN",
+      "comp": "₹1.2M - ₹3M INR + 0.50% - 2.00% equity",
+      "url": "https://www.workatastartup.com/jobs/92554",
+      "source": "YC Work at a Startup",
+      "scraped_at": "2026-06-25T10:05:51.892768+00:00",
+      "posted_at": "2026-06-25",
+      "score": 82,
+      "fit_breakdown": {
+        "skills": 33,
+        "exp": 16,
+        "loc": 15,
+        "comp": 8,
+        "recency": 10,
+        "fit": 5
+      },
+      "tier": 1,
+      "applied": false,
+      "applied_at": null,
+      "status": "new",
+      "why": "Forward Deployed Engineer at Samora AI (YC W26) — multilingual voice agents platform. Voice AI core (Pipecat/LiveKit/WebRTC work at AVOI transfers directly to FDSE at voice agent startup). Founding-stage, India Bengaluru, ₹1.2-3M (10-25 LPA) + 0.5-2% equity.",
+      "notes": "Founders: Vineeth Kumar (BITS Pilani, ex-fintech first eng 0-50k users), Kartik Sawhney (Stanford CS, ex-Microsoft/IBM/Uber, scaled to 500k+ users), Shakul Raj Sonker (Ashoka, ex-AI eng). Company at $50K MRR, targeting $100K MRR, raising seed. YC W26 batch.",
+      "watch_out": "Title explicitly requires 3+ years; Pardhu at 1 yr is a stretch. Apply with strong production voice agent story (AVOI, sub-400ms Pipecat + LiveKit + WebRTC) as exception. Senior ML on team will evaluate. Comp range lower-band might apply given exp.",
+      "company_careers_url": "https://www.workatastartup.com/companies/samora-ai",
+      "company_linkedin": "https://www.linkedin.com/company/samora-ai"
     }
   ]
 }
