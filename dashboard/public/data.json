@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_updated": "2026-06-24T10:08:03.940419+00:00",
-  "total_jobs": 87,
+  "last_updated": "2026-06-25T10:30:00.000000+00:00",
+  "total_jobs": 90,
   "jobs": [
     {
       "id": "26e0c6859948",
@@ -2387,6 +2387,93 @@
       "applied": false,
       "status": "new",
       "notes": "Foundational LLM research \u2014 usually PhD + 2+ yr research. Dream-tier stretch."
+    },
+    {
+      "id": "prodigal-ai-deployment-intern-260625",
+      "company": "Prodigal (YC)",
+      "role": "AI Deployment Intern (Voice AI for lending/collections)",
+      "location": "Mumbai",
+      "comp": "\u2014",
+      "url": "https://job-boards.greenhouse.io/prodigal/jobs/5172601007",
+      "source": "career-scraper",
+      "scraped_at": "2026-06-25T10:30:00+00:00",
+      "posted_at": "2026-06-24",
+      "score": 90,
+      "fit_breakdown": {
+        "skills": 32,
+        "exp": 25,
+        "loc": 14,
+        "comp": 4,
+        "recency": 10,
+        "fit": 5
+      },
+      "tier": 1,
+      "applied": false,
+      "applied_at": null,
+      "status": "new",
+      "why": "Intern role at Prodigal \u2014 YC W17 Series B+, AI Deployment for ProAgent voice AI platform. Direct domain match (voice AI for lending/collections \u2014 Pardhu's AVOI Pipecat/LiveKit stack). Posted 2026-06-24 \u2014 freshest listing in this scrape. Customer Success team (deployment), not Engineering \u2014 good for 1-yr exp intern candidates who want production voice AI experience.",
+      "notes": "Intern-level (0-yr explicit). Mumbai-based. Watch: comp likely stipend-tier; verify whether conversion to full-time is on table. Direct fit to Pardhu's voice agent production experience.",
+      "company_careers_url": "https://www.prodigaltech.com/careers",
+      "company_linkedin": "https://www.linkedin.com/company/prodigal-ai",
+      "watch_out": "Intern comp typically \u20b940-80K/month at YC-backed startups, not full LPA. Check if it's a 6-month internship with PPO conversion. Customer Success role, not core Engineering \u2014 different career path."
+    },
+    {
+      "id": "sarvam-devops-studio-260625",
+      "company": "Sarvam AI",
+      "role": "DevOps Engineer - Studio Platform",
+      "location": "Bengaluru (On-Site)",
+      "comp": "\u2014",
+      "url": "https://www.sarvam.ai/careers#devops-engineer-studio-platform",
+      "source": "career-scraper",
+      "scraped_at": "2026-06-25T10:30:00+00:00",
+      "posted_at": null,
+      "score": 60,
+      "fit_breakdown": {
+        "skills": 12,
+        "exp": 13,
+        "loc": 14,
+        "comp": 7,
+        "recency": 10,
+        "fit": 4
+      },
+      "tier": 2,
+      "applied": false,
+      "applied_at": null,
+      "status": "new",
+      "why": "New listing on Sarvam careers (61 open positions). DevOps for Sarvam Studio (their AI media platform \u2014 TTS, dubbing, transcription). AI-infra adjacent \u2014 not core voice/agent engineering.",
+      "notes": "Fresh from 2026-06-25 scrape of /careers. URL inferred from role-name slug pattern. Studio platform is the AI media pipeline.",
+      "company_careers_url": "https://www.sarvam.ai/careers",
+      "company_linkedin": "https://www.linkedin.com/company/sarvam-ai",
+      "watch_out": "DevOps role \u2014 likely needs K8s/Terraform/AWS/Docker, not voice/agent work. Sarvam Series B DevOps typically 2-4 yr exp. Apply only if interested in AI infra vs. applied AI/LLM."
+    },
+    {
+      "id": "sarvam-embedded-infra-chanakya-260625",
+      "company": "Sarvam AI",
+      "role": "Embedded Infrastructure Engineer, Chanakya",
+      "location": "Delhi (On-Site)",
+      "comp": "\u2014",
+      "url": "https://www.sarvam.ai/careers#embedded-infrastructure-engineer-chanakya",
+      "source": "career-scraper",
+      "scraped_at": "2026-06-25T10:30:00+00:00",
+      "posted_at": null,
+      "score": 66,
+      "fit_breakdown": {
+        "skills": 20,
+        "exp": 12,
+        "loc": 12,
+        "comp": 7,
+        "recency": 10,
+        "fit": 5
+      },
+      "tier": 2,
+      "applied": false,
+      "applied_at": null,
+      "status": "new",
+      "why": "New listing on Sarvam careers (61 open positions). Embedded infra role for Chanakya (Sarvam's enterprise LLM platform) \u2014 direct AI/LLM adjacency.",
+      "notes": "Fresh from 2026-06-25 scrape of /careers. URL inferred from role-name slug pattern. Chanakya office is Delhi.",
+      "company_careers_url": "https://www.sarvam.ai/careers",
+      "company_linkedin": "https://www.linkedin.com/company/sarvam-ai",
+      "watch_out": "Embedded systems role \u2014 likely needs C/C++/Rust, not Python AI agent work. Verify JD for LLM tooling or model serving \u2014 if it's pure embedded, skip. Chanakya team typically 2-5 yr exp."
     }
   ]
 }
