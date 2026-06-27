@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_updated": "2026-06-26T10:03:06.941114+00:00",
-  "total_jobs": 106,
+  "last_updated": "2026-06-27T10:10:46.593559+05:30",
+  "total_jobs": 110,
   "jobs": [
     {
       "id": "26e0c6859948",
@@ -2895,6 +2895,117 @@
       "status": "new",
       "why": "L2 = mid-level voice AI — full-stack cloud + voice AI systems, may want 2-3 yr",
       "notes": ""
+    },
+    {
+      "id": "wf-4391339-trako-junior-260627",
+      "company": "TRAKO INFRA INDIA",
+      "role": "Junior AI Engineer",
+      "location": "Remote (India), Delhi HQ",
+      "comp": "—",
+      "url": "https://wellfound.com/jobs/4391339-junior-ai-engineer",
+      "source": "Wellfound",
+      "scraped_at": "2026-06-27T10:10:46.593559+05:30",
+      "posted_at": "2026-06-26",
+      "score": 82,
+      "fit_breakdown": {
+        "skills": 30,
+        "exp": 22,
+        "loc": 15,
+        "comp": 5,
+        "recency": 10,
+        "fit": 5
+      },
+      "tier": 1,
+      "applied": false,
+      "applied_at": null,
+      "status": "new",
+      "why": "Junior AI Engineer at TRAKO INFRA — Remote India, Delhi-based 201-500 employee growth-stage infra co. Stack: Python + LangChain + RAG + LLM Frameworks (Claude, LlamaIndex) + Embedding Models + Vector DBs. Posted 1 day ago (yesterday). Junior level is inclusive of 1 yr exp. Direct LLM/RAG overlap with Pardhu's Stikbook LLM safety engine work.",
+      "notes": "Comp not disclosed on page — Junior level + growth-stage typically 6-9 LPA. Reply recruiter on Wellfound or email hr@trako.in. Visa: Not available; relocation allowed. 'Actively Hiring' tag — quick process likely.",
+      "company_careers_url": "https://wellfound.com/company/trako-infra-india",
+      "company_linkedin": "https://www.linkedin.com/company/trako-infra-india"
+    },
+    {
+      "id": "wf-3301819-navtech-aiml-260627",
+      "company": "Navtech",
+      "role": "AI/ML Engineer",
+      "location": "Hyderabad (In office)",
+      "comp": "₹6L – ₹10L",
+      "url": "https://wellfound.com/jobs/3301819-ai-ml-engineer",
+      "source": "Wellfound",
+      "scraped_at": "2026-06-27T10:10:46.593559+05:30",
+      "posted_at": "2026-06-20",
+      "score": 80,
+      "fit_breakdown": {
+        "skills": 24,
+        "exp": 25,
+        "loc": 14,
+        "comp": 7,
+        "recency": 7,
+        "fit": 3
+      },
+      "tier": 1,
+      "applied": false,
+      "applied_at": null,
+      "status": "new",
+      "why": "AI/ML Engineer at Navtech (Growth Stage, Hyderabad) — explicit 1 yr of exp, ₹6-10 LPA covers Pardhu's target. Stack: NumPy/SciPy/Pandas/Scikit-learn + NLP + ML + AWS SageMaker + MLOps + Generative AI. 7 days ago. Build ML models for production, MLOps pipelines — Pardhu's AVOI production experience transfers.",
+      "notes": "Growth-stage consulting, similar jobs on page include Frontend Dev. Apply direct on Wellfound.",
+      "company_careers_url": "https://www.navtech.com/careers",
+      "company_linkedin": "https://www.linkedin.com/company/navtech"
+    },
+    {
+      "id": "wf-4354437-wajeeh-aiml-260627",
+      "company": "Wajeeh",
+      "role": "AI/ML Engineer",
+      "location": "Hyderabad (In office)",
+      "comp": "₹6L – ₹6.5L",
+      "url": "https://wellfound.com/jobs/4354437-ai-ml-engineer",
+      "source": "Wellfound",
+      "scraped_at": "2026-06-27T10:10:46.593559+05:30",
+      "posted_at": "2026-06-20",
+      "score": 77,
+      "fit_breakdown": {
+        "skills": 22,
+        "exp": 25,
+        "loc": 14,
+        "comp": 5,
+        "recency": 7,
+        "fit": 4
+      },
+      "tier": 1,
+      "applied": false,
+      "applied_at": null,
+      "status": "new",
+      "why": "AI/ML Engineer at Wajeeh (Transportation/Logistics, 11-50 employees, Hyderabad) — explicit 1 yr of exp, ₹6-6.5 LPA at floor. Stack: Python + scikit-learn + TensorFlow + PyTorch + Docker/K8s + ML/DL/ANN. Top 1% Wellfound responders (responds within a day). 1 week ago. Founder Zaki Mohammed is accessible.",
+      "notes": "Comp exactly at Pardhu's 6.5 LPA floor — viable. Wajeeh is logistics/freight, not voice/agent core — partial stack match (more classical ML than LLM/agent).",
+      "company_careers_url": "https://wellfound.com/company/wajeeh",
+      "company_linkedin": "https://www.linkedin.com/company/wajeeh"
+    },
+    {
+      "id": "naukri-ca0340-cloud-angles-agentic-260627",
+      "company": "Cloud Angles Digital Transformation",
+      "role": "CA0340 - Agentic AI Engineer",
+      "location": "Hyderabad",
+      "comp": "—",
+      "url": "https://www.naukri.com/job-listings-ca0340-agentic-ai-engineer-cloud-angles-digital-transformation-india-private-hyderabad-1-to-3-years-230626943260",
+      "source": "Naukri",
+      "scraped_at": "2026-06-27T10:10:46.593559+05:30",
+      "posted_at": "2026-06-24",
+      "score": 80,
+      "fit_breakdown": {
+        "skills": 28,
+        "exp": 22,
+        "loc": 14,
+        "comp": 5,
+        "recency": 9,
+        "fit": 2
+      },
+      "tier": 1,
+      "applied": false,
+      "applied_at": null,
+      "status": "new",
+      "why": "Agentic AI Engineer at Cloud Angles Digital Transformation (Hyderabad) — explicit 1-3 yr range (Pardhu's 1 yr fits), 3 days ago. JD code 'CA0340' = staffing firm portal likely — verify direct company before applying. Agent focus aligns with Pardhu's LLM/agent work.",
+      "notes": "Verify company on apply — CA0340 is a recruiter code. Likely a real product company. If comp disclosed on apply, target 7-8 LPA.",
+      "company_careers_url": "https://www.cloudangles.com/careers"
     }
   ]
 }
