@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_updated": "2026-06-28T00:04:19+05:30",
-  "total_jobs": 141,
+  "last_updated": "2026-06-28T15:03:36.421698+05:30",
+  "total_jobs": 143,
   "jobs": [
     {
       "id": "26e0c6859948",
@@ -3856,6 +3856,62 @@
       "alt_urls": [],
       "company_careers_url": "http://oblytech.com",
       "company_linkedin": "https://www.linkedin.com/company/oblytech-india"
+    },
+    {
+      "id": "f3d0f9a5e47f",
+      "company": "Zamp",
+      "role": "AI Solutions Analyst (AI Workflows)",
+      "location": "Bengaluru, Karnataka, India (On-Site)",
+      "comp": "₹10-18 LPA + ESOPs",
+      "url": "https://careers.kula.ai/zamp-ai/19526",
+      "source": "Wellfound/Zamp careers (via Kula.ai) + Internshala/Zamp fresher aggregator",
+      "scraped_at": "2026-06-28T15:03:36.421698+05:30",
+      "posted_at": "2026-03-28",
+      "score": 85,
+      "fit_breakdown": {
+        "skills": 32,
+        "exp": 25,
+        "loc": 14,
+        "comp": 10,
+        "recency": 1,
+        "fit": 3
+      },
+      "tier": 1,
+      "applied": false,
+      "applied_at": null,
+      "status": "new",
+      "why": "Zamp is Sequoia-backed ($22M seed 2022 from Sequoia + Uber CEO + DoorDash CEO) AI startup building 'digital employees' for top global orgs (DoorDash, Uber, Stripe). Role sits in Founder's Office building AI workflow automations for BFSI/enterprise customers using Python/JS code generation. Direct exposure to founders, AI workflows + business analysis + scripting — perfect for Pardhu's voice-AI/agent background.",
+      "notes": "Not a pure 'founding engineer' role — leans business analyst + workflow design. Strong IIT/NIT college preference per JD; Pardhu's tier may matter. On-site Bengaluru only.",
+      "company_careers_url": null,
+      "company_linkedin": null
+    },
+    {
+      "id": "4984545be128",
+      "company": "Magnit",
+      "role": "Associate Software Engineer (AI/ML)",
+      "location": "Bengaluru, Karnataka, India",
+      "comp": "₹6-12 LPA (estimated)",
+      "url": "https://jobs.dayforcehcm.com/en-US/prounlimited/CANDIDATEPORTAL/jobs/6767?src=LinkedIn",
+      "source": "Naukri/Magnit careers (Dayforce ATS)",
+      "scraped_at": "2026-06-28T15:03:36.421698+05:30",
+      "posted_at": "2026-05-19",
+      "score": 82,
+      "fit_breakdown": {
+        "skills": 27,
+        "exp": 25,
+        "loc": 14,
+        "comp": 9,
+        "recency": 3,
+        "fit": 4
+      },
+      "tier": 2,
+      "applied": false,
+      "applied_at": null,
+      "status": "new",
+      "why": "AI/ML engineering fresher role at Magnit (large global staffing/MSP firm with India ops). Listed on Magnit careers page (Posted May 19 2026, open till July 31). Bachelor's/Master's eligible. Provides production AI/ML team exposure — solid for someone targeting AI/ML + GenAI.",
+      "notes": "Magnit is a staffing/MSP firm, not a core AI startup. Generic 'AI/ML' job without strong voice/LLM/agent focus. Salary range ~6-12 LPA; floor not guaranteed. Less alignment with Pardhu's voice-AI founding engineer target than a true AI startup would be.",
+      "company_careers_url": null,
+      "company_linkedin": null
     }
   ]
 }
