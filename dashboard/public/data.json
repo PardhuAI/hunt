@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_updated": "2026-06-28T15:30:01+05:30",
-  "total_jobs": 144,
+  "last_updated": "2026-06-28T20:04:58+05:30",
+  "total_jobs": 146,
   "jobs": [
     {
       "id": "26e0c6859948",
@@ -3941,6 +3941,66 @@
       "company_careers_url": "https://www.prodigaltech.com/careers",
       "company_linkedin": "https://www.linkedin.com/company/prodigaltech",
       "watch_out": "Experience mismatch — 'Head of' role typically requires 7-10+ years management experience. Dream-tier title but not realistic for 1-year exp. Skip unless title can be downscoped to Senior/Staff ML Engineer."
+    },
+    {
+      "id": "30ea10bdc17e",
+      "company": "Smart Audit",
+      "role": "AI Engineer",
+      "location": "Bengaluru / Hyderabad / Mumbai (Onsite or Remote)",
+      "comp": "$25K-$50K + 0.0-1.0% equity (~₹21-42 LPA)",
+      "url": "https://wellfound.com/jobs/4235671-ai-engineer",
+      "source": "Wellfound (search aggregation, last 7 days)",
+      "scraped_at": "2026-06-28T20:04:58+05:30",
+      "posted_at": null,
+      "score": 80,
+      "fit_breakdown": {
+        "skills": 28,
+        "exp": 20,
+        "loc": 14,
+        "comp": 8,
+        "recency": 7,
+        "fit": 3
+      },
+      "tier": 2,
+      "applied": false,
+      "applied_at": null,
+      "status": "new",
+      "why": "Smart Audit is a 1-10 employee early-stage AI startup building next-gen audit workflow software. Founder Abhishek (ex-BillTrim CTO) — likely building agentic AI for compliance/audit vertical. Listed on Wellfound 'Actively Hiring' with $25-50K comp + 0-1% equity. Multiple India locations (Bengaluru, Hyderabad, Mumbai +2) with onsite-or-remote flexibility. Genuine AI engineering role for founding team hire.",
+      "notes": "Tier 2 — early stage startup with no public funding/valuation data. Comp band $25-50K implies senior stretch but early-stage startups often accept strong 1-yr engineers for founding roles. Apply directly via Wellfound. Cross-ref: AI Engineer role on Wellfound (job ID 4235671) is distinct from Cutshort's smartaudit.co (founded 2014, MERN-stack only, separate company).",
+      "alt_urls": [],
+      "company_careers_url": "https://wellfound.com/company/smart-audit-1",
+      "company_linkedin": null,
+      "watch_out": "Early-stage startup — equity-only upside; verify runway/funding before commit. 1-10 employees means high individual ownership but also high risk."
+    },
+    {
+      "id": "b7cce4c6a2f4",
+      "company": "Innova ESI",
+      "role": "Senior Associate Data Science",
+      "location": "Bengaluru (Onsite)",
+      "comp": "Competitive (₹6-10 LPA est. for fresher)",
+      "url": "https://internshala.com/job/detail/fresher-senior-associate-data-science-job-in-bangalore-at-innova-esi1782606917",
+      "source": "Internshala (fresher jobs, posted today)",
+      "scraped_at": "2026-06-28T20:04:58+05:30",
+      "posted_at": null,
+      "score": 75,
+      "fit_breakdown": {
+        "skills": 24,
+        "exp": 22,
+        "loc": 14,
+        "comp": 6,
+        "recency": 6,
+        "fit": 3
+      },
+      "tier": 2,
+      "applied": false,
+      "applied_at": null,
+      "status": "new",
+      "why": "Innova ESI hiring Senior Associate Data Science in Bengaluru — fresher eligible. Stack: Azure AI Studio, Azure OpenAI, Microsoft Copilot Studio, LangChain, LangGraph, RAG pipelines, agent orchestration. Posted TODAY on Internshala. Strong Azure + LangChain match for Pardhu's LangChain/RAG/agent background from Stikbook + AVOI.",
+      "notes": "IT services / consulting firm — less startup DNA than Tier 1 AI startups. Azure-heavy stack may differ from his Pipecat/LiveKit voice-AI background, but agent orchestration + RAG work directly transfers. No explicit comp posted (Internshala 'Competitive salary').",
+      "alt_urls": [],
+      "company_careers_url": null,
+      "company_linkedin": "https://www.linkedin.com/company/innova-esi",
+      "watch_out": ""
     }
   ]
 }
