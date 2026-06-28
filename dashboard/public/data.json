@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_updated": "2026-06-28T15:07:24.919645+00:00",
-  "total_jobs": 152,
+  "last_updated": "2026-06-29T00:03:40+05:30",
+  "total_jobs": 153,
   "jobs": [
     {
       "id": "26e0c6859948",
@@ -4175,6 +4175,34 @@
       "notes": "Senior = 4+ yr, likely need strong distributed systems / Python backend. Mumbai is below Bangalore in user's priority but YC brand + voice-AI stack makes it tier 1.",
       "company_careers_url": "https://www.prodigaltech.com/careers",
       "company_linkedin": null
+    },
+    {
+      "id": "wf-3604909-100ms-ai-agents-healthcare-260629",
+      "company": "100ms",
+      "role": "AI Engineer – AI Agents (Healthcare)",
+      "location": "Bengaluru (India HQ of live-video infrastructure startup; ex-Facebook/Hotstar CEO)",
+      "comp": "₹20L – ₹50L",
+      "url": "https://wellfound.com/jobs/3604909-ai-engineer-ai-agents-healthcare",
+      "source": "Wellfound",
+      "scraped_at": "2026-06-29T00:03:40+05:30",
+      "posted_at": "2026-06-29",
+      "score": 85,
+      "fit_breakdown": {
+        "skills": 30,
+        "exp": 20,
+        "loc": 15,
+        "comp": 10,
+        "recency": 10,
+        "fit": 5
+      },
+      "tier": 1,
+      "applied": false,
+      "applied_at": null,
+      "status": "new",
+      "why": "AI Engineer – AI Agents (Healthcare) at 100ms, a Wellfound Top-5%-of-responders live-video infrastructure startup (11-50 employees, ex-Facebook/Hotstar CEO co-founder). Bengaluru HQ. 1-2 yrs AI/LLM engineering experience required per Wellfound listing (Indeed cross-ref shows 2-5 yrs SWE — flag ambiguity). ₹20-50L cash (well above 6.5L floor and 8+ LPA target). Stack: LLM engineering + AI Agents in healthcare. Posted today/1 day ago — freshest match in this poll cycle. Pardhu's AVOI voice-AI agent + Stikbook LLM content-safety work maps to LLM engineering + agent reliability. Top score candidate. Watch-out: 1-yr exp sits at floor of Wellfound's stated range; if Indeed's stricter 2-5 yr SWE req is enforced, this may be a stretch — confirm in HR outreach before applying.",
+      "notes": "Cross-ref via Wellfound snippet + Indeed (in.indeed.com/q-ai-engineer-2-year-experience-l-bengaluru). Job ID 3604909. Same parent role as 'Product Manager - AI Agents (Healthcare) ₹25L-80L + 0.02-0.11%' (PM role, ignore). Dedupe verified: 100ms not in data.json. Rechecked against aggregator last_run notes (Smart Audit + Innova ESI on 2026-06-28) — distinct company.",
+      "company_careers_url": "https://wellfound.com/company/100ms",
+      "company_linkedin": "https://www.linkedin.com/company/100ms-live"
     }
   ]
 }
