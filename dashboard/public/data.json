@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_updated": "2026-06-28T15:03:36.421698+05:30",
-  "total_jobs": 143,
+  "last_updated": "2026-06-28T15:30:01+05:30",
+  "total_jobs": 144,
   "jobs": [
     {
       "id": "26e0c6859948",
@@ -3912,6 +3912,35 @@
       "notes": "Magnit is a staffing/MSP firm, not a core AI startup. Generic 'AI/ML' job without strong voice/LLM/agent focus. Salary range ~6-12 LPA; floor not guaranteed. Less alignment with Pardhu's voice-AI founding engineer target than a true AI startup would be.",
       "company_careers_url": null,
       "company_linkedin": null
+    },
+    {
+      "id": "4223dd489e6d",
+      "company": "Prodigal (YC)",
+      "role": "Head of Machine Learning",
+      "location": "Bengaluru / Mumbai, India",
+      "comp": "—",
+      "url": "https://job-boards.greenhouse.io/prodigal/jobs/5132883007",
+      "source": "career-scraper",
+      "scraped_at": "2026-06-28T15:30:01+05:30",
+      "posted_at": null,
+      "score": 66,
+      "fit_breakdown": {
+        "skills": 25,
+        "exp": 8,
+        "loc": 15,
+        "comp": 7,
+        "recency": 8,
+        "fit": 3
+      },
+      "tier": 1,
+      "applied": false,
+      "applied_at": null,
+      "status": "new",
+      "why": "Prodigal is voice AI for lending/collections — exact domain match. Bengaluru/Mumbai locations are top tier. But 'Head of ML' = 7-10+ years required. Way out of 1-yr experience band.",
+      "notes": "",
+      "company_careers_url": "https://www.prodigaltech.com/careers",
+      "company_linkedin": "https://www.linkedin.com/company/prodigaltech",
+      "watch_out": "Experience mismatch — 'Head of' role typically requires 7-10+ years management experience. Dream-tier title but not realistic for 1-year exp. Skip unless title can be downscoped to Senior/Staff ML Engineer."
     }
   ]
 }
