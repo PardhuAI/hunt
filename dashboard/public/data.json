@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_updated": "2026-06-30T00:03:07+05:30",
-  "total_jobs": 138,
+  "last_updated": "2026-06-30T00:35:45.944110+05:30",
+  "total_jobs": 139,
   "jobs": [
     {
       "id": "26e0c6859948",
@@ -3787,6 +3787,30 @@
       "company_careers_url": "https://in.linkedin.com/company/ethereal-labs",
       "company_linkedin": "https://in.linkedin.com/company/ethereal-labs",
       "watch_out": "Tier 1 candidate but two watch-outs: (1) Comp not posted — founding roles typically pay below market cash + equity, may come in under Pardhu's 6.5 LPA floor on cash comp alone. Probe in first DM to avoid wasting a high-touch slot. (2) Consumer-AI entertainment domain is a slight domain stretch from voice-AI agents, but the applied LLM/RAG/agent stack transfer is strong. If JD mentions voice or real-time agent infrastructure, treat as Tier 1+; if purely content-gen / video, treat as Tier 1 but de-prioritize vs Ethereal Labs candidates with clearer voice-AI alignment. Verify before apply."
+    },
+    {
+      "id": "57cf0a8ce5acbc87",
+      "company": "ElevenLabs",
+      "role": "Solutions Engineer - India",
+      "location": "Remote, India",
+      "comp": "Not disclosed (ElevenLabs pays globally competitive; estimated $80-150K USD base for SE India)",
+      "url": "https://elevenlabs.io/careers/fb1fd9cc-bd6d-4895-be29-4bc37d0c31a0/solutions-engineer-india",
+      "source": "career-scraper",
+      "scraped_at": "2026-06-30T00:35:45.944110+05:30",
+      "posted_at": "Active",
+      "score": 82,
+      "fit_breakdown": {
+        "skills": 26,
+        "exp": 22,
+        "loc": 15,
+        "comp": 7,
+        "recency": 8,
+        "fit": 4
+      },
+      "tier": 1,
+      "applied": false,
+      "status": "new",
+      "notes": "Voice AI solutions engineering on ElevenLabs platform. India-only remote role. No formal experience required — they explicitly say 'It's ok if you only worked with customers in student clubs or side projects, as long as you are interested in working closely with them on a technical capacity.' Strong Python + customer-facing AI focus. Pardhu's AVOI voice AI experience is directly relevant."
     }
   ]
 }
