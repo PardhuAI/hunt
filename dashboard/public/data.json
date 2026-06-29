@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_updated": "2026-06-29T00:03:40+05:30",
-  "total_jobs": 153,
+  "last_updated": "2026-06-29T15:03:58+05:30",
+  "total_jobs": 154,
   "jobs": [
     {
       "id": "26e0c6859948",
@@ -4203,6 +4203,36 @@
       "notes": "Cross-ref via Wellfound snippet + Indeed (in.indeed.com/q-ai-engineer-2-year-experience-l-bengaluru). Job ID 3604909. Same parent role as 'Product Manager - AI Agents (Healthcare) ₹25L-80L + 0.02-0.11%' (PM role, ignore). Dedupe verified: 100ms not in data.json. Rechecked against aggregator last_run notes (Smart Audit + Innova ESI on 2026-06-28) — distinct company.",
       "company_careers_url": "https://wellfound.com/company/100ms",
       "company_linkedin": "https://www.linkedin.com/company/100ms-live"
+    },
+    {
+      "id": "42c06847f4cb",
+      "company": "Dentsu",
+      "role": "AI Engineer (Junior AI Developer — Off-campus 2026)",
+      "location": "Bengaluru / Pune / Pan-India",
+      "comp": "₹6-12 LPA",
+      "url": "https://dentsuaegis.wd3.myworkdayjobs.com/en-US/DAN_GLOBAL/job/AI-Engineer_R1114817-6",
+      "source": "Dentsu Workday (via Instagram off-campus drive cross-ref)",
+      "scraped_at": "2026-06-29T15:03:58+05:30",
+      "posted_at": null,
+      "score": 75,
+      "fit_breakdown": {
+        "skills": 22,
+        "exp": 18,
+        "loc": 14,
+        "comp": 9,
+        "recency": 9,
+        "fit": 3
+      },
+      "tier": 2,
+      "applied": false,
+      "applied_at": null,
+      "status": "new",
+      "why": "Dentsu's 2026 Off-Campus drive is hiring Junior AI Developer / AI Engineer across Bengaluru / Pune / Pan-India, explicitly open to 2025/2026 batch graduates. Comp band 6-12 LPA — sits squarely inside Pardhu's 6.5+ LPA floor / 8-10 LPA target. Workday listing R1114817 shows the role under DGS India — Bengaluru office. Dentsu India is a sizeable Ad-tech / digital marketing network with a real AI/ML engineering practice (LLM integration, automation, agent workflows for marketing use cases).",
+      "notes": "Cross-references: Instagram off-campus drive reels (@it_referralindia / @searchlibframe / similar) + Dentsu careers portal (dentsu.com/in/en/careers) + Workday R1114817 listing. Title varies across platforms (Junior AI Developer on Instagram reels vs. AI Engineer on Workday) — same job family. Workday JD may require 2+ yr even though off-campus drive is fresher-friendly. Internal-score consistency: skills 22 + exp 18 + loc 14 + comp 9 + recency 9 + fit 3 = 75/100.",
+      "alt_urls": [],
+      "company_careers_url": "https://www.dentsu.com/in/en/careers",
+      "company_linkedin": "https://www.linkedin.com/company/dentsu",
+      "watch_out": "Tier 2 — global ad-network, not pure AI startup. Confirm at interview that the role is hands-on AI engineering, not 'AI marketing strategist' or GTM-adjacent. Verify hiring manager / team (DGS India tech practice vs. dentsu Creative / Media arms). Workday JD (R1114817) reads 'provide technical guidance' — more architecture / hybrid than hands-on LLM/RAG day 1. Off-campus reels frame it as Junior AI Developer — verify exp requirement matches the reel tone. Reasonable fit for 'mass-apply' strategy but not a Tier-1 voice-AI / agent startup."
     }
   ]
 }
