@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_updated": "2026-06-29T15:32:52+05:30",
-  "total_jobs": 137,
+  "last_updated": "2026-06-30T00:03:07+05:30",
+  "total_jobs": 138,
   "jobs": [
     {
       "id": "26e0c6859948",
@@ -3757,6 +3757,36 @@
       "notes": "On-site Bengaluru, voice/dubbing focus. 1-yr friendly on AI Engineer track typical at Sarvam.",
       "company_careers_url": "https://www.sarvam.ai/careers",
       "company_linkedin": "https://www.linkedin.com/company/sarvam-ai"
+    },
+    {
+      "id": "a64546f11856",
+      "company": "Ethereal Labs",
+      "role": "Founding AI Engineer",
+      "location": "Bengaluru",
+      "comp": "—",
+      "url": "https://in.linkedin.com/jobs/ethereal-jobs",
+      "source": "LinkedIn",
+      "scraped_at": "2026-06-30T00:03:07+05:30",
+      "posted_at": null,
+      "score": 82,
+      "fit_breakdown": {
+        "skills": 24,
+        "exp": 21,
+        "loc": 15,
+        "comp": 8,
+        "recency": 10,
+        "fit": 4
+      },
+      "tier": 1,
+      "applied": false,
+      "applied_at": null,
+      "status": "new",
+      "why": "Ethereal Labs is a stealth-stage AI consumer startup founded March 2026 by CTO Harsh Kr Gupta (formerly SDE Intern at Pinaca Technologies). The company is building next-generation AI-powered consumer products across entertainment, storytelling, video, and interactive experiences — applied LLM/agent stack deeply relevant to Pardhu's AVOI + content-safety background. The Founding AI Engineer posting dropped on LinkedIn ~1 day ago (cross-confirmed by 5+ separate LinkedIn job-aggregator snippets showing 53min / 6hr / 11hr / 13hr / 17hr / 20hr timings, all consistent with a single 2026-06-29 posting). Bengaluru location is Pardhu's top-tier target. Recruiter signals 'thrive in ambiguity, moves fast, production-grade AI systems' — matches the founding-engineer archetype Pardhu is targeting.",
+      "notes": "Recruiter signal: 'Looking for Founding AI Engineer / AI Hacker who thrives in ambiguity, moves fast, wants to build production-grade AI systems'. CTO Harsh Kr Gupta posted Mar 2026 (per LinkedIn profile experience timeline). LinkedIn-aggregator URL surfaces this posting alongside 9 other unrelated Bengaluru Senior Voice/5G roles — filter to the Ethereal Labs card only. Company description from BeBee: 'Ethereal Labs is building next-generation AI-powered consumer products across entertainment, storytelling, video, and interactive experiences.' No explicit voice-AI call-out in snippet, but applied LLM/agent stack is core — Pardhu should probe stack alignment in outreach. Best canonical apply path: the LinkedIn search-alert page until the full job detail page is navigable for signed-out users. Backup apply path: DM the CTO directly (Harsh Kr Gupta, LinkedIn in/imguptaharsh) with his AVOI tailwind — founding-engineer comp is negotiable, equity can compensate for any cash gap if the product thesis resonates.",
+      "alt_urls": [],
+      "company_careers_url": "https://in.linkedin.com/company/ethereal-labs",
+      "company_linkedin": "https://in.linkedin.com/company/ethereal-labs",
+      "watch_out": "Tier 1 candidate but two watch-outs: (1) Comp not posted — founding roles typically pay below market cash + equity, may come in under Pardhu's 6.5 LPA floor on cash comp alone. Probe in first DM to avoid wasting a high-touch slot. (2) Consumer-AI entertainment domain is a slight domain stretch from voice-AI agents, but the applied LLM/RAG/agent stack transfer is strong. If JD mentions voice or real-time agent infrastructure, treat as Tier 1+; if purely content-gen / video, treat as Tier 1 but de-prioritize vs Ethereal Labs candidates with clearer voice-AI alignment. Verify before apply."
     }
   ]
 }
