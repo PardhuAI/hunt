@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_updated": "2026-07-01T00:04:01+05:30",
-  "total_jobs": 150,
+  "last_updated": "2026-06-30T19:08:11Z",
+  "total_jobs": 154,
   "jobs": [
     {
       "id": "26e0c6859948",
@@ -4113,6 +4113,118 @@
       "company_careers_url": "https://in.linkedin.com/company/hylancer",
       "company_linkedin": "https://in.linkedin.com/company/hylancer",
       "watch_out": "Two watch-outs: (1) On-site Hyderabad only — no remote option per BeBee JD. Pardhu's priority is Bangalore > Hyderabad, so this is a Tier 2 city match. (2) Hylancer is very small (11 employees) with no publicly disclosed funding — execution risk is non-trivial. Founders have strong pedigree (Cambridge, Forbes 30U30, 2X founder track record) but company runway / burn rate is unverified. If founder responds to a warm LinkedIn DM with funding details + technical depth on the LangGraph agent stack, treat as Tier 1+. If not, downgrade to Tier 2 due to small-team + on-site + unverified runway."
+    },
+    {
+      "id": "c48408c81da2",
+      "company": "Prodigal",
+      "role": "Spanish Conversational-AI Specialist",
+      "location": "Remote - Global (India preferred)",
+      "comp": "—",
+      "url": "https://job-boards.greenhouse.io/prodigal/jobs/5155937007",
+      "source": "career-scraper",
+      "scraped_at": "2026-06-30T19:08:11Z",
+      "posted_at": "2026-06-04",
+      "score": 89,
+      "fit_breakdown": {
+        "skills": 33,
+        "exp": 22,
+        "loc": 14,
+        "comp": 5,
+        "recency": 10,
+        "fit": 5
+      },
+      "tier": 2,
+      "applied": false,
+      "applied_at": null,
+      "status": "new",
+      "why": "Prodigal: Spanish-language conversational-AI specialist. Direct voice-AI alignment with Pardhu's AVOI production experience. ProAgent is their core platform. Remote global — India-friendly.",
+      "notes": "",
+      "company_careers_url": "https://www.prodigaltech.com/careers",
+      "company_linkedin": "https://www.linkedin.com/company/prodigaltech"
+    },
+    {
+      "id": "0d52a307fc29",
+      "company": "Observe.AI",
+      "role": "Senior Machine Learning Engineer - NLP",
+      "location": "Bengaluru",
+      "comp": "—",
+      "url": "https://www.observe.ai/position?gh_jid=5131980008",
+      "source": "career-scraper",
+      "scraped_at": "2026-06-30T19:08:11Z",
+      "posted_at": "2026-03-06",
+      "score": 84,
+      "fit_breakdown": {
+        "skills": 32,
+        "exp": 14,
+        "loc": 15,
+        "comp": 5,
+        "recency": 8,
+        "fit": 5
+      },
+      "tier": 2,
+      "applied": false,
+      "applied_at": null,
+      "status": "new",
+      "why": "Observe.AI Greenhouse: Senior ML Engineer - NLP. Bengaluru (India-first tier). Conversational AI for contact centers. Watch out: Senior = 3-5 yrs typical — overshoot for 1-yr Pardhu. Worth checking; could be reconsidered for stretch.",
+      "notes": "Senior tag — likely 3+ yrs minimum. May be filter-up for 1-yr exp.",
+      "company_careers_url": "https://www.observe.ai/careers",
+      "company_linkedin": "https://www.linkedin.com/company/observe-ai"
+    },
+    {
+      "id": "c944f8106739",
+      "company": "Observe.AI",
+      "role": "Software Development Engineer III - Backend",
+      "location": "Bengaluru",
+      "comp": "—",
+      "url": "https://www.observe.ai/position?gh_jid=4173623008",
+      "source": "career-scraper",
+      "scraped_at": "2026-06-30T19:08:11Z",
+      "posted_at": "2024-11-12",
+      "score": 60,
+      "fit_breakdown": {
+        "skills": 15,
+        "exp": 10,
+        "loc": 15,
+        "comp": 5,
+        "recency": 5,
+        "fit": 3
+      },
+      "tier": 2,
+      "applied": false,
+      "applied_at": null,
+      "status": "new",
+      "why": "Backend SDE-III at Observe.AI (Bengaluru). Generic backend role, posted Nov 2024 (old). Watch out: SD-III implies senior — likely 4-6 yrs. Watch out.",
+      "notes": "Old posting (Nov 2024). SD-III typically 4-6 yrs.",
+      "company_careers_url": "https://www.observe.ai/careers",
+      "company_linkedin": "https://www.linkedin.com/company/observe-ai"
+    },
+    {
+      "id": "b0bb3e2d5651",
+      "company": "Observe.AI",
+      "role": "Staff DevSecOps Engineer",
+      "location": "Bengaluru",
+      "comp": "—",
+      "url": "https://www.observe.ai/position?gh_jid=5205887008",
+      "source": "career-scraper",
+      "scraped_at": "2026-06-30T19:08:11Z",
+      "posted_at": "2026-05-06",
+      "score": 50,
+      "fit_breakdown": {
+        "skills": 12,
+        "exp": 8,
+        "loc": 15,
+        "comp": 5,
+        "recency": 7,
+        "fit": 3
+      },
+      "tier": 2,
+      "applied": false,
+      "applied_at": null,
+      "status": "new",
+      "why": "Observe.AI Bengaluru DevSecOps. Watch out: Staff level (6+ yrs typical) — major overshoot. Generic infra, low AI core.",
+      "notes": "Staff title = 6+ yrs typical — strong REJECT for 1-yr.",
+      "company_careers_url": "https://www.observe.ai/careers",
+      "company_linkedin": "https://www.linkedin.com/company/observe-ai"
     }
   ]
 }
