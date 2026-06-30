@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_updated": "2026-06-30T00:35:45.944110+05:30",
-  "total_jobs": 139,
+  "last_updated": "2026-06-30T10:08:28+05:30",
+  "total_jobs": 141,
   "jobs": [
     {
       "id": "26e0c6859948",
@@ -3811,6 +3811,66 @@
       "applied": false,
       "status": "new",
       "notes": "Voice AI solutions engineering on ElevenLabs platform. India-only remote role. No formal experience required — they explicitly say 'It's ok if you only worked with customers in student clubs or side projects, as long as you are interested in working closely with them on a technical capacity.' Strong Python + customer-facing AI focus. Pardhu's AVOI voice AI experience is directly relevant."
+    },
+    {
+      "id": "3f931daa427c",
+      "company": "ViH Labs and Innovation",
+      "role": "Machine Learning Engineer (Voice AI)",
+      "location": "Remote (Bengaluru) / Bhopal+5",
+      "comp": "₹8.4L – ₹10L",
+      "url": "https://wellfound.com/jobs/4203466-machine-learning-engineer-voice-ai",
+      "source": "Wellfound",
+      "scraped_at": "2026-06-30T10:07:55+05:30",
+      "posted_at": null,
+      "score": 92,
+      "fit_breakdown": {
+        "skills": 30,
+        "exp": 25,
+        "loc": 13,
+        "comp": 10,
+        "recency": 10,
+        "fit": 4
+      },
+      "tier": 1,
+      "applied": false,
+      "applied_at": null,
+      "status": "new",
+      "why": "ViH Labs and Innovation is a B2B Voice AI startup building voice AI solutions tailored for multiple industry use cases across India. The Wellfound job listing (#4203466) for Machine Learning Engineer (Voice AI) was reposted 1 day ago with ₹8.4L – ₹10L comp and 1 year of exp required — exact match for Pardhu's 1-year AVOI production voice-agent experience. Founder Soumadri Sen also runs ViH Metaverse; LinkedIn presence shows a small team including Mitangshu Chatterjee (Voice AI / Data Scientist / Gen AI / Computer Vision) and Manish Srivastav (Gen AI Intern). Location is Remote (Bengaluru, Karnataka) plus Bhopal + 4 other metros — Remote Bengaluru is Tier 1 in Pardhu's priority order. Comp band ₹8.4-10L is exactly the top of Pardhu's stated 1-yr target band (6.5-10 LPA). Voice AI is the core business, not a feature, which makes this a stronger match than ed-tech 'voice AI as feature' alternatives.",
+      "notes": "Recruiter signal: 'We are looking for a passionate and highly skilled Machine Learning Engineer – Voice AI ... ViH Labs and Innovation is hiring a Machine Learning Engineer (Voice AI) ... Voice AI solutions tailored for multiple industry use cases across India.' Wellfound shows ViH Labs responds to applications within two weeks. Other open roles at ViH Labs: DevOps Engineer ₹8.4-12L (also fresh) + Mobile App Developer (in office). Company is small (~5-15 people est. based on team visibility) and the founder is biz-dev-led (3 decades sales/BD) rather than ML-led — technical execution risk is the main watch-out. Stack overlap with AVOI (voice AI / Gen AI / WebRTC / LiveKit / Pipecat) should be strong; probe specifically in DM to Soumadri (founder) on technical mentorship and production-voice-agent infrastructure expectations.",
+      "alt_urls": [],
+      "company_careers_url": "https://wellfound.com/company/vih-labs-and-innovation/jobs",
+      "company_linkedin": "https://in.linkedin.com/company/vih-labs-and-innovations",
+      "watch_out": "Two watch-outs: (1) Founder Soumadri Sen's background is 3 decades in business development, not ML — confirm in first DM whether there's a senior ML/CTO technical lead on the team. (2) Smaller startup (5-15 ppl est.) = higher execution risk; cross-check runway/funding. If Soumadri replies with strong technical depth in the founding team, treat as Tier 1+. If execution risk looks high, downgrade to Tier 2 behind Ethereal Labs."
+    },
+    {
+      "id": "f3d543e2d89f",
+      "company": "Arivihan Technologies",
+      "role": "Machine Learning Engineer (Voice AI)",
+      "location": "Onsite or remote (Bhopal+5, likely Indore HQ)",
+      "comp": "₹8.4L – ₹10L",
+      "url": "https://wellfound.com/role/l/machine-learning-engineer/india",
+      "source": "Wellfound",
+      "scraped_at": "2026-06-30T10:07:55+05:30",
+      "posted_at": null,
+      "score": 86,
+      "fit_breakdown": {
+        "skills": 28,
+        "exp": 25,
+        "loc": 11,
+        "comp": 10,
+        "recency": 10,
+        "fit": 2
+      },
+      "tier": 2,
+      "applied": false,
+      "applied_at": null,
+      "status": "new",
+      "why": "Arivihan Technologies is an Indore-based ed-tech startup founded in 2024 by Ritesh Singh, Sonu Kumar Prashant, and Rushabh Kothari. The company raised $4.17M Pre-A in August 2025 from Prosus, Accel, and GSF Investors and won the MTW AI Excellence Award. The product is an AI-driven K-11/12 tutoring platform that supports Hindi + Indian-English voice interaction ('personal tutor in each student's pocket'). The Wellfound ML Engineer (Voice AI) role was posted yesterday with ₹8.4-10L comp and 1 yr exp req — the same exact comp+exp band as the ViH Labs role. Voice AI here is a feature of the tutor (speech recognition, Hindi ASR, conversational tutoring) rather than core infrastructure. Pardhu's AVOI production-voice-agent experience transfers directly to the speech-recog + real-time-voice stack this role would own, but the domain (K-12 ed-tech tutoring) is a slight stretch from his enterprise-voice-agent focus.",
+      "notes": "Recruiter signal: Wellfound India ML Engineer search page card shows 'Machine Learning Engineer (Voice AI) Full-time. ₹8.4L – ₹10L. Onsite or remote • Bhopal+5. 1 year of exp. yesterday.' Company is well-funded ($4.17M Pre-A, Prosus/Accel/GSF) and award-winning (MTW AI Excellence Award winner alongside Sarvam, Qure.ai, SpotDraft, Dashverse). 3 co-founders all engineering/product backgrounds. Team likely 50-200 (well-funded growth stage). Cross-ref location 'Bhopal+5' — likely includes Bengaluru, Hyderabad, Pune. Stack overlap with AVOI: speech recognition, real-time voice interaction, multilingual (Hindi) ASR, GenAI for content. Watch out: voice AI is the feature surface, not the platform's primary moat — career growth may skew toward ed-tech product rather than voice AI infra depth.",
+      "alt_urls": [],
+      "company_careers_url": "https://wellfound.com/company/arivihan-technologies/jobs",
+      "company_linkedin": "https://www.linkedin.com/company/arivihan-technologies",
+      "watch_out": "Three watch-outs: (1) Voice AI is a feature of the tutor product, not core business — confirm in first DM that the ML Engineer role owns voice/speech production work, not just content/personalization. (2) Ed-tech domain (K-12 tutoring) is a slight stretch from Pardhu's enterprise voice agent focus; if the JD emphasizes voice production infra, treat as Tier 1+. (3) Indore HQ + Bhopal+5 remote — verify Bengaluru/Mumbai are in the +5 list before applying. If only Bhopal + smaller Tier 3 cities, downgrade to Tier 2 location-wise."
     }
   ]
 }
